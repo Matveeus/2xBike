@@ -1,0 +1,86 @@
+{
+  "header": {
+    "navigation": {
+      "main": "Główna",
+      "bikes": "Rower",
+      "rent": "Wynajem",
+      "reviews": "Recenzje",
+      "about_company": "O firmie",
+      "contacts": "Kontakty"
+    }
+  },
+  "intro": {
+    "heading1": "WYPOŻYCZALNIA ROWERÓW ELEKTRYCZNYCH",
+    "heading2": "W POLSCE",
+    "body-text": "Zapoznaj się z najprostszą procedurą wynajmu, niezrównanymi cenami na rynku i bezpłatnymi, błyskawicznymi usługami serwisowymi.",
+    "card1": "Ocena w Google",
+    "card2": "Zadowolonych klientów",
+    "rent_button": "Wynajmij teraz",
+    "login_button": "Zaloguj się"
+  },
+  "overview": {
+    "heading": "PRZEGLĄD NOWEGO ROWERU ELEKTRYCZNEGO",
+    "cards": {
+      "card1title": "Przebieg",
+      "card1text": "Do 100 km",
+      "card2title": "Maks. prędkość",
+      "card2text": "50 km/h",
+      "card3title": "Czas pracy baterii",
+      "card3text": "Do 8 godzin",
+      "card4title": "Moc",
+      "card4text": "750 Wt",
+      "card5title": "Więcej informacji",
+      "card5text": "Charakterystyka"
+    }
+  },
+  "plans": {
+    "heading": "WYBIERZ SWÓJ PLAN NAJMU",
+    "plans": {
+      "plan1Title": "+1 BATERIA",
+      "plan2Title": "ZAKUP",
+      "plan3Title": "WYNAJEM JEDNORAZOWY",
+      "plan4Title": "JEDNORAZOWY+",
+      "plan1Desc": "Ten pakiet to podstawowy pakiet, który obejmuje tylko wynajem roweru elektrycznego na tydzień.",
+      "plan2Desc": "Ten pakiet to podstawowy pakiet, który obejmuje tylko wynajem roweru elektrycznego z 2 bateriami na tydzień.",
+      "plan3Desc": "Ten pakiet to podstawowy pakiet, który obejmuje tylko wynajem roweru elektrycznego na nie więcej niż 3 dni.",
+      "plan4Desc": "Ten pakiet to podstawowy pakiet, który obejmuje tylko wynajem roweru elektrycznego na nie mniej niż 3 dni i nie więcej niż 14 dni.",
+      "plan1Price": "200 zł/tydzień",
+      "plan2Price": "250 zł/tydzień",
+      "plan3Price": "70 zł/dzień",
+      "plan4Price": "50 zł/dzień",
+      "plan1Button": "Kup Podstawowy Plan",
+      "plan2Button": "Kup Plan Zakupu",
+      "plan3Button": "Więcej informacji",
+      "plan4Button": "Więcej informacji"
+    }
+  },
+  "additions": {
+    "heading": "DODATKI",
+    "additions": {
+      "addition1Title": "+1 BATERIA",
+      "addition2Title": "+KASK",
+      "addition1Desc": "Ten pakiet to podstawowy pakiet, który obejmuje tylko wynajem roweru elektrycznego na tydzień.",
+      "addition2Desc": "Możesz wynająć dodatkowy kask do roweru elektrycznego.",
+      "addition1Price": "+50 zł/tydzień",
+      "addition2Price": "+10 zł/tydzień",
+      "addition1Button": "Kup",
+      "addition2Button": "Kup"
+    }
+  },
+  "aboutus": {
+    "heading": "O NAS"
+  },
+  "reviews": {
+    "heading": "NASI KLIENCI MÓWIĄ"
+  },
+  "contacts": {
+    "heading": "KONTAKTY",
+    "address-label" : "Adres",
+    "phone-label": "Telefon",
+    "email-label": "E-mail",
+    "hours-label": "Godziny pracy",
+    "monday-friday": "Pon - Pt 8:00 - 20:00",
+    "saturday": "Sob 10:00 - 16:00",
+    "sunday": "Niedz - Zamknięte"
+  }
+}
