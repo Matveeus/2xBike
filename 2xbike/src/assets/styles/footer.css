@@ -1,0 +1,25 @@
+.footer {
+    padding: 80px 0 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #010020;
+    margin-bottom: 24px;
+}
+
+.payment-providers {
+    display: flex;
+    gap: 35px;
+}
+
+.footer p {
+    text-align: center;
+    color: #010020;
+    font-size: 18px;
+    font-family: Inter, serif;
+    font-weight: 400;
+
+}

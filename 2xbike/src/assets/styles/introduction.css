@@ -1,0 +1,109 @@
+@keyframes scale-up {
+    0% {
+        transform: scale(0.85);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.scale {
+    animation: scale-up 3s ease-in-out;
+    transform-origin: center center;
+}
+
+.intro-block {
+    width: 100%;
+    margin-top: 48px;
+}
+
+.under-text {
+    line-height: 0.8;
+}
+
+.intro-content {
+    margin-top: 26px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-side {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 500px;
+    margin-right: 30px;
+}
+
+.left-side p {
+    color: #010020;
+    font-size: 18px;
+    font-family: Inter, serif;
+    font-weight: 500;
+}
+
+.bike-intro {
+    max-width: 860px;
+    width: 100%;
+    height: 460px;
+    position: relative;
+    background-color: #FDE4E4;
+    border-radius: 24px
+}
+
+.bike {
+    position: absolute;
+    top: -60px;
+    left: -15px;
+}
+
+.about-bike {
+    padding: 16px;
+    background-color: #CE1212;
+    width: 185px;
+    border-radius: 24px;
+    font-family: Inter, serif;
+    color: #FFFFFF;
+}
+
+.cards {
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+}
+
+.first-card {
+    margin-bottom: 16px;
+}
+
+.card-number {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.card-text {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 8px 0 0 0;
+}
+
+.intro-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.intro-buttons button {
+    width: 200px;
+    height: 60px;
+    border-radius: 24px;
+    font-size: 18px;
+    font-family: Inter, serif;
+    font-weight: 500;
+    border: 1px solid #010020;
+    cursor: pointer;
+}
+
+.login-button {
+
+}

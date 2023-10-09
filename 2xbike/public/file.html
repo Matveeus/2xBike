@@ -1,0 +1,140 @@
+<input type="text" id="SuppliersBrandsDashboardSearch" onkeyup="updateTable(this.value)" placeholder="Search for suppliers" title="Type in a name">
+<table class="table table-bordered table-hover" id="SuppliersBrandsDashboardTable">
+    <thead>
+    <tr>
+        <th>{{ trans.suppliers_name }}</th>
+        <th>{{ trans.brands_name }}</th>
+        <th>{{ trans.set_as_default_filter }}</th>
+        <th>{{ trans.dont_show_brand_and_its_videos }}</th>
+        <th>{{ trans.set_as_preferred }}</th>
+        <th>{{ trans.brands_order }}</th>
+    </tr>
+    </thead>
+    <tbody id="tableBody">
+    </tbody>
+</table>
+<script>
+    var suppliersData = null;
+    async function updateTable(filter) {
+        var tableBody = document.getElementById("tableBody");
+        tableBody.innerHTML = "";
+        const csrfToken = getCookie('csrftoken');
+
+        try {
+            const response = await axios.get('router/update_suppliers/', {
+                headers: {
+                    'X-CSRFToken': csrfToken,
+                },
+            });
+
+            suppliersData = response.data.results;
+            console.log(suppliersData);
+
+            suppliersData.forEach(function(item) {
+                if (
+                    !filter ||
+                    item.name.toUpperCase().includes(filter.toUpperCase())
+            ) {
+                    var row = document.createElement("tr");
+                    var supplierCell = document.createElement("td");
+                    var brandCell = document.createElement("td");
+                    var list = document.createElement("ul");
+                    var isDefaultCell = document.createElement("td");
+                    var showCell = document.createElement("td");
+                    var preferredCell = document.createElement("td");
+                    var orderCell = document.createElement("td");
+                    isDefaultCell.classList.add("checkboxes-cell");
+
+                    supplierCell.textContent = item.name;
+
+                    item.suppliers.forEach(function(supplier) {
+                        var supplierListItem = document.createElement("li");
+                        supplierListItem.textContent = supplier.name;
+                        supplierListItem.classList.add("brand");
+                        list.appendChild(supplierListItem);
+
+                        var isDefaultCheckbox = document.innerHtml('<div class="video-container" data-supplier-id="' + supplier.id + '">\n' +
+                            '                    <input type="checkbox" class="supplier-checkbox-is-default default-checkbox"' +
+                            (supplier.is_default ? ' checked="checked"' : '') +
+                            '>\n' +
+                            '                  </div>');
+                        isDefaultCell.appendChild(isDefaultCheckbox);
+                        isDefaultCheckbox.querySelector('input').addEventListener('change', function() {
+                            handleCheckboxChange(this, 'is_default');
+                        });
+
+                        var showCheckbox = document.innerHtml('<div class="video-container" data-supplier-id="' + supplier.id + '">\n' +
+                            '                    <input type="checkbox" class="supplier-checkbox-show default-checkbox"' +
+                            (supplier.show ? ' checked="checked"' : '') +
+                            '>\n' +
+                            '                  </div>');
+                        showCell.appendChild(showCheckbox);
+                        showCheckbox.querySelector('input').addEventListener('change', function() {
+                            handleCheckboxChange(this, 'show');
+                        });
+
+                        var preferredCheckbox = document.innerHtml('<div class="video-container" data-supplier-id="' + supplier.id + '">\n' +
+                            '                    <input type="checkbox" class="supplier-checkbox-preferred default-checkbox"' +
+                            (supplier.preferred ? ' checked="checked"' : '') +
+                            '>\n' +
+                            '                  </div>');
+                        preferredCell.appendChild(preferredCheckbox);
+                        preferredCheckbox.querySelector('input').addEventListener('change', function() {
+                            handleCheckboxChange(this, 'preferred');
+                        });
+
+                    });
+
+                    brandCell.appendChild(list);
+
+                    row.appendChild(supplierCell);
+                    row.appendChild(brandCell);
+                    row.appendChild(isDefaultCell);
+                    row.appendChild(showCell);
+                    row.appendChild(preferredCell);
+                    row.appendChild(orderCell);
+
+                    tableBody.appendChild(row);
+                }
+            });
+        } catch (error) {
+            console.error("Error fetching data:", error);
+        }
+    }
+
+    updateTable("");
+    function handleCheckboxChange(checkbox, action) {
+        const dashSupplierUpdateUrl = "{% url 'dash_supplier_update' 0 %}";
+        const supplierId = checkbox.parentElement.getAttribute("data-supplier-id");
+        const supplier = suppliersData.find(s => s.id === supplierId);
+
+        if (supplier) {
+            if (action === "is_default") {
+                supplier.is_default = checkbox.checked;
+            } else if (action === "show") {
+                supplier.show = checkbox.checked;
+            } else if (action === "preferred") {
+                supplier.preferred = checkbox.checked;
+            }
+
+            let isSupplierShowFormData = new FormData();
+
+            isSupplierShowFormData.append('supplier_id', supplierId);
+            isSupplierShowFormData.append('action', action);
+
+            const csrfToken = getCookie('csrftoken');
+            axios.post(dashSupplierUpdateUrl.replace("0", supplierId), isSupplierShowFormData, {
+                headers: {
+                    'X-CSRFToken': csrfToken,
+                },
+            })
+                .then(function (response) {
+                    console.log(response.data.message);
+                })
+                .catch(function (error) {
+                    console.error(error);
+                });
+        }
+    }
+
+</script>

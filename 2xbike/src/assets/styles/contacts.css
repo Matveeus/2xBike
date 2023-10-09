@@ -1,0 +1,38 @@
+.contacts-block {
+    margin-top: 80px;
+    padding: 80px 0;
+    background-color: #010020;
+}
+
+.contacts-block .heading {
+    color: #FFFFFF;
+}
+
+.all-contacts {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    color: #FFFFFF;
+    margin-top: 48px;
+}
+
+.contact-label {
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-family: Inter, serif;
+    font-weight: 400;
+}
+
+.contact {
+    font-size: 24px;
+    font-family: Inter, serif;
+    font-weight: 500;
+}
+
+.work-hours:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.map {
+    margin-top: 24px;
+}

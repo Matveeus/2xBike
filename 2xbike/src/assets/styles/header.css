@@ -1,0 +1,117 @@
+.header {
+    z-index: 10;
+    background: #FFFFFF;
+}
+
+.header.visible {
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #010020;
+    padding: 48px 0;
+    transition: all .6s;
+    -moz-transition: all .6s;
+    -o-transition: all .6s;
+    -webkit-transition: all .6s;
+}
+
+.header-inner.visible {
+    padding: 25px 0;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.nav-item {
+    font-family: Inter, serif;
+    color: #010020;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.nav-item:hover, .language:hover {
+    color: #CE1212;
+}
+
+.actions-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 160px;
+}
+
+.language-button {
+    width: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    outline: none;
+    border: none;
+    font-family: Inter, serif;
+    color: #010020;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.language-menu {
+    left: 0;
+    top: 105px;
+    right: 140px;
+}
+
+.expand-close {
+    transition: transform 0.4s;
+    transform: rotate(0deg);
+}
+
+.expand-open {
+    transition: transform 0.4s;
+    transform: rotate(180deg);
+}
+
+.MuiPopover-paper {
+    margin-top: 10px;
+}
+
+.MuiMenu-paper .css-6hp17o-MuiList-root-MuiMenu-list {
+    padding: 16px 32px;
+}
+
+.language:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    font-family: Inter, serif;
+    color: #010020;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.language img, .language-button img {
+    margin-right: 8px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.account-button {
+    cursor: pointer;
+}
+
+
+
