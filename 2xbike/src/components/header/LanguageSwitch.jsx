@@ -8,6 +8,7 @@ import en from '../../assets/images/flags/en.png';
 import pl from '../../assets/images/flags/pl.png';
 import ua from '../../assets/images/flags/ua.png';
 import ru from '../../assets/images/flags/ru.png';
+import by from '../../assets/images/flags/by.png';
 
 export default function LanguageSwitch() {
   const { i18n } = useTranslation();
@@ -26,6 +27,9 @@ export default function LanguageSwitch() {
     case 'ru':
       initLanguage = { abrr: 'Рус', image: ru, name: 'Русский', locale: 'ru' };
       break;
+    case 'by':
+      initLanguage = { abrr: 'Бел', image: by, name: 'Белорусский', locale: 'by' };
+      break;
     default:
       initLanguage = { abrr: 'Eng', image: en, name: 'English', locale: 'en' };
       break;
@@ -39,7 +43,7 @@ export default function LanguageSwitch() {
     { abrr: 'Pol', image: pl, name: 'Polski', locale: 'pl' },
     { abrr: 'Укр', image: ua, name: 'Український', locale: 'ua' },
     { abrr: 'Рус', image: ru, name: 'Русский', locale: 'ru' },
-    { abrr: 'Бел', image: ru, name: 'Белорусский ', locale: 'by' },
+    { abrr: 'Бел', image: by, name: 'Белорусский ', locale: 'by' },
   ];
 
   const handleClose = () => {

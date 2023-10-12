@@ -1,5 +1,4 @@
-/* eslint-disable import/no-named-as-default */
-/* eslint-disable import/no-named-as-default-member */ import React from 'react';
+import React from 'react';
 import './assets/styles/App.css';
 import Header from './components/header/Header';
 import Introduction from './components/introduction/Introduction';

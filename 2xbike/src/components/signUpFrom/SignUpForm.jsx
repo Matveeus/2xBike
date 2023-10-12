@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Box, IconButton, InputAdornment, TextField } from '@mui/material';
-import { withStyles } from '@mui/styles';
 import { useTranslation } from 'react-i18next';
 import { useForm } from 'react-hook-form';
 import { Visibility, VisibilityOff } from '@mui/icons-material';
@@ -43,28 +42,6 @@ export default function SignUpForm() {
     console.log(name, email, password, passwordConfirm);
   };
 
-  const CssTextField = withStyles({
-    root: {
-      '& label.Mui-focused': {
-        color: '#010020',
-      },
-      '& .MuiInput-underline:after': {
-        borderBottomColor: '#010020',
-      },
-      '& .MuiOutlinedInput-root': {
-        '& fieldset': {
-          borderColor: '#010020',
-        },
-        '&:hover fieldset': {
-          borderColor: '#010020',
-        },
-        '&.Mui-focused fieldset': {
-          borderColor: '#010020',
-        },
-      },
-    },
-  })(TextField);
-
   return (
     <Box className="container">
       <Box>
@@ -76,7 +53,7 @@ export default function SignUpForm() {
               <p>{t('sign-up.info')}</p>
             </Box>
             <form onSubmit={handleSubmit(onSubmit)}>
-              <CssTextField
+              <TextField
                 className="sign-in-form-input"
                 type="text"
                 placeholder={t('sign-up.name-placeholder')}
@@ -88,7 +65,7 @@ export default function SignUpForm() {
                 helperText={!!errors.name && errors.name.message}
                 fullWidth
               />
-              <CssTextField
+              <TextField
                 className="sign-in-form-input"
                 type="email"
                 placeholder={t('sign-up.email-placeholder')}
@@ -104,7 +81,7 @@ export default function SignUpForm() {
                 helperText={!!errors.email && errors.email.message}
                 fullWidth
               />
-              <CssTextField
+              <TextField
                 className="sign-in-form-input"
                 type={showPassword ? 'text' : 'password'}
                 placeholder={t('sign-up.password-placeholder')}
@@ -126,7 +103,7 @@ export default function SignUpForm() {
                 helperText={!!errors.password && errors.password.message}
                 fullWidth
               />
-              <CssTextField
+              <TextField
                 className="sign-in-form-input"
                 type={showPassword ? 'text' : 'password'}
                 placeholder={t('sign-up.confirm-password-placeholder')}
