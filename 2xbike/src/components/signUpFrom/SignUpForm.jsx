@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import { Box, IconButton, InputAdornment, TextField } from '@mui/material';
 import { useTranslation } from 'react-i18next';
@@ -38,9 +39,7 @@ export default function SignUpForm() {
     setPasswordRepeat(e.target.value);
   };
 
-  const onSubmit = () => {
-    console.log(name, email, password, passwordConfirm);
-  };
+  const onSubmit = () => {};
 
   return (
     <Box className="container">
