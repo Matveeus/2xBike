@@ -18,6 +18,7 @@
 }
 
 .under-text {
+    text-wrap: nowrap;
     line-height: 0.8;
 }
 
@@ -104,6 +105,32 @@
     cursor: pointer;
 }
 
-.login-button {
+@media (max-width: 1500px) {
+    .actions-block {
+        width: 140px;
+    }
+    .navigation {
+        width: 65%;
+    }
+}
 
+@media (max-width: 1430px) {
+    .under-text {
+        line-height: 0.5;
+    }
+}
+
+@media (max-width: 1230px) {
+    .bike-intro {
+        height: 350px;
+    }
+    .bike {
+        width: 70%;
+    }
+    .about-bike {
+        width: 155px;
+    }
+    .card-number {
+        font-size: 32px;
+    }
 }

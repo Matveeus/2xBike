@@ -39,6 +39,7 @@ export default function LanguageSwitch() {
     { abrr: 'Pol', image: pl, name: 'Polski', locale: 'pl' },
     { abrr: 'Укр', image: ua, name: 'Український', locale: 'ua' },
     { abrr: 'Рус', image: ru, name: 'Русский', locale: 'ru' },
+    { abrr: 'Бел', image: ru, name: 'Белорусский ', locale: 'by' },
   ];
 
   const handleClose = () => {

@@ -33,91 +33,82 @@ export default function CustomersReviews() {
       >
         <SwiperSlide>
           <Box className="review">
-            <img src={customer1} alt="our customer" />
-            <Box>
-              <Box className="customer-name">
-                <p>Ivan</p>
-                <p>Perekotypole</p>
+            <Box className="review-inner">
+              <img src={customer1} alt="our customer" />
+              <Box>
+                <Box className="customer-name">
+                  <p>Olzhas</p>
+                  <p>Amanzhan</p>
+                </Box>
+                <p className="review-text">{t('reviews.review1')}</p>
               </Box>
-              <p className="review-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
-              </p>
             </Box>
           </Box>
         </SwiperSlide>
         <SwiperSlide>
           <Box className="review">
-            <img src={customer1} alt="our customer" />
-            <Box>
-              <Box className="customer-name">
-                <p>Ivan</p>
-                <p>Perekotypole</p>
+            <Box className="review-inner">
+              <img src={customer1} alt="our customer" />
+              <Box>
+                <Box className="customer-name">
+                  <p>么ᎷᎬᏞᏆᎾᎠᎪᎦ乡</p>
+                </Box>
+                <p className="review-text">{t('reviews.review2')}</p>
               </Box>
-              <p className="review-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
-              </p>
             </Box>
           </Box>
         </SwiperSlide>
         <SwiperSlide>
           <Box className="review">
-            <img src={customer1} alt="our customer" />
-            <Box>
-              <Box className="customer-name">
-                <p>Ivan</p>
-                <p>Perekotypole</p>
+            <Box className="review-inner">
+              <img src={customer1} alt="our customer" />
+              <Box>
+                <Box className="customer-name">
+                  <p>Dragon of Chaos</p>
+                </Box>
+                <p className="review-text">{t('reviews.review3')}</p>
               </Box>
-              <p className="review-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
-              </p>
             </Box>
           </Box>
         </SwiperSlide>
         <SwiperSlide>
           <Box className="review">
-            <img src={customer1} alt="our customer" />
-            <Box>
-              <Box className="customer-name">
-                <p>Ivan</p>
-                <p>Perekotypole</p>
+            <Box className="review-inner">
+              <img src={customer1} alt="our customer" />
+              <Box>
+                <Box className="customer-name">
+                  <p>Mikita</p>
+                  <p>Hanusenka</p>
+                </Box>
+                <p className="review-text">{t('reviews.review4')}</p>
               </Box>
-              <p className="review-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
-              </p>
             </Box>
           </Box>
         </SwiperSlide>
         <SwiperSlide>
           <Box className="review">
-            <img src={customer1} alt="our customer" />
-            <Box>
-              <Box className="customer-name">
-                <p>Ivan</p>
-                <p>Perekotypole</p>
+            <Box className="review-inner">
+              <img src={customer1} alt="our customer" />
+              <Box>
+                <Box className="customer-name">
+                  <p>Alex</p>
+                </Box>
+                <p className="review-text">{t('reviews.review5')}</p>
               </Box>
-              <p className="review-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
-              </p>
             </Box>
           </Box>
         </SwiperSlide>
         <SwiperSlide>
           <Box className="review">
-            <img src={customer1} alt="our customer" />
-            <Box>
-              <Box className="customer-name">
-                <p>Ivan</p>
-                <p>Perekotypole</p>
+            <Box className="review-inner">
+              <img src={customer1} alt="our customer" />
+              <Box>
+                <Box className="customer-name">
+                  <p>Kirill</p>
+                  <p>Morozov</p>
+                </Box>
+                <p className="review-text">{t('reviews.review6')}</p>
               </Box>
-              <p className="review-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
-              </p>
             </Box>
           </Box>
         </SwiperSlide>

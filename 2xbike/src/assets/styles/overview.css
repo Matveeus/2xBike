@@ -106,3 +106,9 @@
     margin-left: auto;
 }
 
+@media (max-width: 1430px) {
+    .overview-block {
+        margin-top: 160px;
+    }
+}
+

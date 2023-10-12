@@ -51,3 +51,12 @@
     align-self: flex-end;
 }
 
+@media (max-width: 1430px) {
+    .text-part h2 {
+        font-size: 48px;
+    }
+    .about-us-block {
+        margin-top: 140px;
+    }
+}
+

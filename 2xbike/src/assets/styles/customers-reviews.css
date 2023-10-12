@@ -17,10 +17,19 @@
 
 .review {
     background: #FDE4E4;
-    padding: 48px;
     border-radius: 24px;
     transition: all .5s ease;
     display: flex;
+    height: 100%;
+}
+
+.review-inner {
+    display: flex;
+    padding: 48px;
+}
+
+.swiper-slide {
+    height: auto;
 }
 
 .swiper-slide-active .review{
@@ -45,7 +54,7 @@
 }
 
 .customer-name {
-    padding: 18px;
+    padding: 18px 0;
 }
 
 .customer-name p{
@@ -66,4 +75,10 @@
 .review-text {
     margin-top: 15px;
     text-align: left;
+}
+
+@media (max-width: 1430px) {
+    .reviews-block {
+        margin-top: 140px;
+    }
 }

@@ -1,5 +1,6 @@
 {
     "header": {
+      "login": "Log in",
         "navigation": {
           "main" : "Main",
           "bikes" : "Bike",
@@ -71,7 +72,13 @@
     "heading": "ABOUT US"
   },
   "reviews": {
-    "heading": "OUR CUSTOMER SAYS"
+    "heading": "OUR CUSTOMER SAYS",
+    "review1": "Great bike rental. I've been using it for several months and have no complaints. I recommend it to everyone looking for bikes.",
+    "review2": "I work at Glovo on a regular bike, and I make 150 zlotys a day at best. On x2bike, I made 265 zlotys on the very first day and set it up on the scooter in the app. Very satisfied. A really good tool for earning money.",
+    "review3": "Everything was great, processed quickly, used it for two weeks, but returned it due to personal circumstances. The bike is good, it accelerates to 35-40 on a flat road with the push of a button, has suspension. There were no issues with the return. In the future, I'll probably use their services again.",
+    "review4": "Nice service, bikes are in good condition. I really appreciate it, thank you!",
+    "review5": "Impressions are high from his electric bikes. As an experienced courier, I believe that x2bike has the best electric bikes in Warsaw.",
+    "review6": "The bike is very smooth and is faster than I expected! Helped me sign up for my subscription and was very friendly! I will definitely be doing a lot of deliveries on this bike!"
   },
   "contacts": {
     "heading": "CONTACTS",
@@ -82,5 +89,64 @@
     "monday-friday": "Mon - Fri 8AM - 8PM",
     "saturday": "Sat 10AM - 4PM",
     "sunday": "Sun - Closed"
+  },
+  "sign-up": {
+    "heading": "Sign up to arrange a rental",
+    "info": "Enter your contact information in the form below to create an account",
+    "name-placeholder" : "Enter your name",
+    "email-placeholder" : "Enter your email",
+    "password-placeholder" : "Create a password",
+    "confirm-password-placeholder" : "Confirm a password",
+    "have-account" : "Already have an account?",
+    "have-account-log-in" : "Log in",
+    "submit-form": "Submit",
+    "name-req" : "Name is required",
+    "email-req" : "Email is required",
+    "email-invalid" : "Invalid email address",
+    "password-req" : "Password is required",
+    "password-length" : "Enter 6+ symbols",
+    "password-confirm-req" : "Password and password confirmation do not match"
+  },
+  "FAQ": {
+    "more-questions" : "More questions",
+    "hide" : "Hide",
+    "question1" : "How x2bike subscription works?",
+    "question2" : "Who can rent?",
+    "question3" : "What is included in the subscription?",
+    "question4" : "What should I do if an e-bike is stolen?",
+    "question5" : "I have run out of subscription, how fast should I return the e-bike?",
+    "question6" : "Can I return the e-bike earlier, before the subscription ends?",
+    "question7" : "How can I cancel my subscription?",
+    "question8" : "What is the procedure for returning an e-bike?",
+    "question9" : "My e-bike broke down, what should I do?",
+    "question10" : "Is a deposit required to start the rental?",
+    "question11" : "Where can I pick up my reserved electric bicycle?",
+    "question12" : "When does my rental start?",
+    "question13" : "How Rent-to-Own program works?",
+    "question14" : "Who can apply for the program?",
+    "question15" : "What is included in the Rent-to-Own program?",
+    "question16" : "Am I getting a new e-bike?",
+    "question17" : "Can I return the e-bike earlier, before the Rent-to-Own plan ends?",
+    "question18" : "My e-bike broke down, what should I do?",
+    "question19" : "If the e-bike is damaged/broken, how do you determine if it is it the user's fault?",
+    "answer1": "You subscribe on the website by following our instructions. After that, our manager contacts you to coordinate the details of the transfer of a bicycle. The subscription begins to take effect from the moment you receive your bicycle. You use it until you get tired of it. If you no longer need a bike, you can cancel your subscription, and drop off your bicycle at our location.",
+    "answer2": "An e-bike rental subscription can be issued to a person with a government issued ID which is valid for next three month and the person is 18 years old and over.\n\nAlso you'll need\n\n- Debit/credit card in your name (cash/prepaid not accepted)\n\n- Proof of address (digital copy, e.g. latest bank statement, is acceptable)\n\n- SSN is no longer needed. In rare cases a refundable deposit may apply\n\n\nWe conduct background checks for all customers. In rare cases where a customer doesn't pass, we may be unable to provide an e-bike or require a deposit.",
+    "answer3": "The subscription includes an electric bike, vest, alarm system, phone mount, a charger and a safety lock. A bicycle basket is provided for free upon availability. We also have a protection plan and overnight storage service.",
+    "answer4": "We strongly ask you to treat the e-bike as your own and take all necessary safety measures. In case of theft, we charge you the cost indicated in the transfer certificate and recommend that you contact the police. We also have a transport protection plan service.",
+    "answer5": "After the subscription expires, you must return the e-bike within 48 hours. After 48 hours, if you do not return the e-bike, penalties will begin to accrue per day.",
+    "answer6": "You can return the e-bike any day before the end of the subscription. However, the amount of unused days of the paid subscription is not refunded.",
+    "answer7": "You can cancel your subscription by yourself in your account. You can cancel your subscription any day before it ends. At the same time, the e-bike can be used until the end of the paid period, regardless of the date of cancellation of the subscription.",
+    "answer8": "You need to return the bike no later than 48 hours after the end of the subscription with all the supplemental equipment, and any other items rented from Whizz.  On return, our representative will examine the e-Bike and supplemental equipment for any damages that do not constitute normal wear and tear and you will sign a Return Act.",
+    "answer9": "In case of mechanical issues with the e-bike, immediately stop using it and contact us to agree on the date and time of its replacement with a new one. Monthly subscription fees cover only normal wear and tear and extra fees may apply in case of other types of damage.",
+    "answer10": "No",
+    "answer11": "After confirming your registration on the website, electric bicycles are issued at our service center at ul. Mesyńska 17 in Warsaw.",
+    "answer12": "Your rental starts only after you receive the electric bike.",
+    "answer13": "Our Rent-to-Own option allows you to start using a bike right away by making a $99 down payment. Then, you will make 12 monthly payments of from $169 each. The initial payment will be the down payment plus the first month's payment. Once all payments have been made, the ownership of the bike will be transferred to you. You may find more information in our E-bike subscription agreement and Rent-to-own supplemental agreement",
+    "answer14": "Our e-bike Rent-to-Own program is available to anyone who is 18 years of age or older and can provide all the necessary documents like\n\n- Debit/credit card in your name (cash/prepaid not accepted)\n\n- Proof of address (digital copy, e.g. latest bank statement, is acceptable)\n\n- SSN is no longer needed. In rare cases a refundable deposit may apply",
+    "answer15": "Our Rent-to-Own program comes with everything you need to enjoy your e-bike, including the electric bike, phone mount, charger, alarm system, vest, and safety lock. We also offer complimentary extras like a bicycle basket when available. Additionally, we offer a protection plan to give you peace of mind while you are using your bike.",
+    "answer16": "Under our Rent-to-Own program, we provide new e-bikes to customers who enroll from day one of their subscription. However, we've designed the flexibility for you to switch to the RTO program anytime within the first four months of your subscription.",
+    "answer17": "You have the flexibility to return the e-bike at any time before the end of your Rent-to-Own plan. However, please keep in mind that the transfer of e-bike ownership will not take place until all payments are made.",
+    "answer18": "In case of mechanical issues with the e-bike, immediately stop using it and contact us to agree on the date and time of its repair.",
+    "answer19": "Our team of expert bike mechanics will conduct a thorough examination of the bike to determine its condition. You can find more information about this process in the E-bike agreement subscription."
   }
 }

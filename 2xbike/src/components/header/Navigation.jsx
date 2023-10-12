@@ -9,7 +9,7 @@ export default function Navigation() {
       <Link to="main" className="nav-item" spy smooth offset={-160} duration={2000}>
         {t('header.navigation.main')}
       </Link>
-      <Link to="bikes" className="nav-item" spy smooth offset={-150} duration={2000}>
+      <Link to="bikes" className="nav-item" spy smooth offset={-100} duration={2000}>
         {t('header.navigation.bikes')}
       </Link>
       <Link to="rent" className="nav-item" spy smooth offset={-150} duration={2000}>

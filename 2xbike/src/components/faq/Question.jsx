@@ -5,7 +5,7 @@ import expandLess from '../../assets/images/icons/minus.svg';
 import expandMore from '../../assets/images/icons/plus.svg';
 
 export default function Question({ number, question, answer }) {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const handleClick = () => {
     setOpen(!open);
   };

@@ -4,7 +4,7 @@ p {
 
 .container {
   display: flex;
-  width: 85%;
+  width: 86%;
   margin: 0 auto;
 }
 
@@ -36,6 +36,27 @@ p {
 
 .white-button:hover {
   background-color: #F6F6F6FF;
+}
+
+@media (max-width: 1600px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1430px) {
+  .heading {
+    font-size: 62px;
+  }
+  .rent-card-title {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 1230px) {
+  .heading {
+    font-size: 52px;
+  }
 }
 
 

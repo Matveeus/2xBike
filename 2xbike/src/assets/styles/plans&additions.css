@@ -126,3 +126,15 @@
     margin-left: 0;
 }
 
+@media (max-width: 1430px) {
+    .plans-block {
+        margin-top: 140px;
+    }
+    .rent-card-title {
+        font-size: 48px;
+    }
+    .additions-block {
+        margin-top: 140px;
+    }
+}
+

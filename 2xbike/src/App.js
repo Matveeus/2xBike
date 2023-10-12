@@ -1,4 +1,5 @@
-import React from 'react';
+/* eslint-disable import/no-named-as-default */
+/* eslint-disable import/no-named-as-default-member */ import React from 'react';
 import './assets/styles/App.css';
 import Header from './components/header/Header';
 import Introduction from './components/introduction/Introduction';
@@ -7,6 +8,7 @@ import RentPlans from './components/plans/RentPlans';
 import Additions from './components/additions/Additions';
 import AboutUs from './components/aboutUs/AboutUs';
 import CustomersReviews from './components/customersReviews/CustomersReviews';
+import SignUpForm from './components/signUpFrom/SignUpForm';
 import FAQ from './components/faq/FAQ';
 import Contacts from './components/contacts/Contacts';
 import Footer from './components/footer/Footer';
@@ -21,6 +23,7 @@ function App() {
       <Additions />
       <AboutUs />
       <CustomersReviews />
+      <SignUpForm />
       <FAQ />
       <Contacts />
       <Footer />

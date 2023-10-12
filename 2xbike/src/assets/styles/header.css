@@ -113,5 +113,69 @@
     cursor: pointer;
 }
 
+@media (max-width: 1360px) {
+    .actions-block {
+        width: 140px;
+    }
+    .navigation {
+        width: 65%;
+    }
+}
+
+@media (max-width: 1130px) {
+    .header-inner {
+        padding: 24px 0;
+    }
+}
+
+.menu-modal {
+    width: 100%;
+}
+
+.burger-menu, .close-cross {
+    background: none;
+    border: none;
+    max-width: 24px;
+    height: 24px;
+}
+
+.menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+    border-bottom: 1px solid #010020;
+}
+
+.mobile-navigation {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #010020;
+    font-size: 18px;
+    font-family: Inter, serif;
+    font-weight: 400;
+}
+
+.mobile-navigation a:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.login-button {
+    font-size: 14px;
+    font-family: Inter, serif;
+    font-weight: 400;
+    width: 170px;
+    height: 56px;
+    border-radius: 16px;
+}
+
+.bottom-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 
