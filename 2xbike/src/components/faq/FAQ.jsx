@@ -7,11 +7,9 @@ import Question from './Question';
 export default function FAQ() {
   const { t } = useTranslation();
   const [open, setOpen] = useState(false);
-  const [buttonText, setButtonText] = useState(open ? t('FAQ.hide') : t('FAQ.more-questions'));
 
   const expandQuestions = () => {
     setOpen(!open);
-    setButtonText(open ? t('FAQ.more-questions') : t('FAQ.hide'));
   };
   return (
     <Box className="container">
@@ -25,7 +23,7 @@ export default function FAQ() {
           <Question number="05" question={t('FAQ.question12')} answer={t('FAQ.answer12')} />
         </Box>
         <button className="white-button more-questions" type="button" onClick={expandQuestions}>
-          {buttonText}
+          {open ? t('FAQ.hide') : t('FAQ.more-questions')}
         </button>
         <Box sx={{ width: '100%' }}>
           <Collapse in={open} timeout="auto" unmountOnExit>

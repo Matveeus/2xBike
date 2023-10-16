@@ -28,7 +28,7 @@ export default function MobileNavigation() {
         <img src={burgerMenu} alt="menu" />
       </button>
       <Dialog fullScreen open={open} onClose={handleClose} TransitionComponent={Transition}>
-        <Box className="container">
+        <Box className="container" sx={{ height: '100%' }}>
           <Box className="menu-modal">
             <Box className="menu-header">
               <Logo />

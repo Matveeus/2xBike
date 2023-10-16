@@ -59,4 +59,16 @@ p {
   }
 }
 
+@media (max-width: 1130px) {
+  .heading {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 850px) {
+  .heading {
+    font-size: 32px;
+  }
+}
+
 

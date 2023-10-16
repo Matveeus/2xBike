@@ -36,3 +36,45 @@
 .map {
     margin-top: 24px;
 }
+
+.google-map {
+    height: 550px;
+    border-radius: 24px;
+    border: none;
+}
+
+@media (max-width: 1024px) {
+    .contacts-block {
+        margin-top: 20px;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    .contact {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 850px) {
+    .contacts-block {
+        margin-top: 20px;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    .contact {
+        font-size: 20px;
+    }
+    .google-map {
+        height: 260px;
+        border-radius: 16px;
+    }
+    .all-contacts {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .contact-label, .contact {
+        font-size: 14px;
+    }
+    .contact-label {
+        margin-bottom: 8px;
+    }
+}

@@ -130,6 +130,8 @@
 
 .menu-modal {
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .burger-menu, .close-cross {
@@ -175,7 +177,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: auto;
+    margin-bottom: 30px;
 }
+
 
 
 

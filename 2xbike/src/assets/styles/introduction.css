@@ -36,7 +36,7 @@
     margin-right: 30px;
 }
 
-.left-side p {
+.intro-info {
     color: #010020;
     font-size: 18px;
     font-family: Inter, serif;
@@ -125,12 +125,113 @@
         height: 350px;
     }
     .bike {
-        width: 70%;
+        width: 440px;
     }
     .about-bike {
         width: 155px;
     }
     .card-number {
         font-size: 32px;
+    }
+}
+
+@media (max-width: 1130px) {
+    .intro-buttons {
+        display: block;
+    }
+    .intro-buttons button {
+        width: 100%;
+    }
+
+    .intro-buttons button:not(:last-child) {
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .bike {
+        top: -45px;
+        left: 70px;
+    }
+    .intro-buttons {
+        display: flex;
+        margin-top: 40px;
+    }
+    .bike-intro {
+        max-width: 100%;
+    }
+    .cards {
+        right: 90px;
+    }
+    .intro-info {
+        margin: 30px 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .bike {
+        top: -45px;
+        left: 70px;
+    }
+    .intro-buttons {
+        display: flex;
+        margin-top: 40px;
+    }
+    .bike-intro {
+        max-width: 100%;
+    }
+    .cards {
+        right: 90px;
+    }
+    .intro-info {
+        margin: 30px 0;
+    }
+}
+
+@media (max-width: 850px) {
+    .intro-block {
+        margin-top: 20px;
+    }
+    .bike, .cards {
+        position: inherit;
+    }
+    .bike {
+        transform: translate(-49%, 0);
+        left: 49%;
+        top: -100px;
+    }
+    .cards {
+        top: -90px;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    .about-bike {
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 16px;
+        padding: 8px 16px;
+    }
+    .card-text {
+        font-size: 14px;
+    }
+    .intro-buttons {
+        margin-top: 20px;
+    }
+    .intro-buttons button {
+        font-size: 14px;
+        border-radius: 16px;
+    }
+    .bike-intro {
+        height: calc(100% - 385px);
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .intro-info {
+        margin: 20px 0 70px 0;
+        font-size: 14px;
+    }
+    .intro-buttons button {
+        height: 48px;
     }
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box } from '@mui/material';
+import { Box, useMediaQuery } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import '../../assets/styles/customers-reviews.css';
 /* eslint-disable import/no-unresolved */
@@ -13,6 +13,7 @@ import customer1 from '../../assets/images/customers/ivan.jpeg';
 
 export default function CustomersReviews() {
   const { t } = useTranslation();
+  const isMobile = useMediaQuery('(max-width: 1130px)');
   return (
     <Box className="reviews-block" id="reviews">
       <Box className="container">
@@ -33,83 +34,172 @@ export default function CustomersReviews() {
       >
         <SwiperSlide>
           <Box className="review">
-            <Box className="review-inner">
-              <img src={customer1} alt="our customer" />
-              <Box>
-                <Box className="customer-name">
-                  <p>Olzhas</p>
-                  <p>Amanzhan</p>
+            {isMobile ? (
+              <>
+                <Box className="review-inner">
+                  <img src={customer1} alt="our customer" />
+                  <Box>
+                    <Box className="customer-name">
+                      <p>Olzhas</p>
+                      <p>Amanzhan</p>
+                    </Box>
+                  </Box>
                 </Box>
                 <p className="review-text">{t('reviews.review1')}</p>
+              </>
+            ) : (
+              <Box className="review-inner">
+                <img src={customer1} alt="our customer" />
+                <Box>
+                  <Box className="customer-name">
+                    <p>Olzhas</p>
+                    <p>Amanzhan</p>
+                  </Box>
+                  <p className="review-text">{t('reviews.review1')}</p>
+                </Box>
               </Box>
-            </Box>
+            )}
           </Box>
         </SwiperSlide>
         <SwiperSlide>
           <Box className="review">
-            <Box className="review-inner">
-              <img src={customer1} alt="our customer" />
-              <Box>
-                <Box className="customer-name">
-                  <p>么ᎷᎬᏞᏆᎾᎠᎪᎦ乡</p>
+            {isMobile ? (
+              <>
+                <Box className="review-inner">
+                  <img src={customer1} alt="our customer" />
+                  <Box>
+                    <Box className="customer-name">
+                      <p>么ᎷᎬᏞᏆᎾᎠᎪᎦ乡</p>
+                    </Box>
+                  </Box>
                 </Box>
                 <p className="review-text">{t('reviews.review2')}</p>
+              </>
+            ) : (
+              <Box className="review-inner">
+                <img src={customer1} alt="our customer" />
+                <Box>
+                  <Box className="customer-name">
+                    <p>么ᎷᎬᏞᏆᎾᎠᎪᎦ乡</p>
+                  </Box>
+                  <p className="review-text">{t('reviews.review2')}</p>
+                </Box>
               </Box>
-            </Box>
+            )}
           </Box>
         </SwiperSlide>
         <SwiperSlide>
           <Box className="review">
-            <Box className="review-inner">
-              <img src={customer1} alt="our customer" />
-              <Box>
-                <Box className="customer-name">
-                  <p>Dragon of Chaos</p>
+            {isMobile ? (
+              <>
+                <Box className="review-inner">
+                  <img src={customer1} alt="our customer" />
+                  <Box>
+                    <Box className="customer-name">
+                      <p>Mikita</p>
+                      <p>Hanusenka</p>
+                    </Box>
+                  </Box>
                 </Box>
                 <p className="review-text">{t('reviews.review3')}</p>
+              </>
+            ) : (
+              <Box className="review-inner">
+                <img src={customer1} alt="our customer" />
+                <Box>
+                  <Box className="customer-name">
+                    <p>Mikita</p>
+                    <p>Hanusenka</p>
+                  </Box>
+                  <p className="review-text">{t('reviews.review3')}</p>
+                </Box>
               </Box>
-            </Box>
+            )}
           </Box>
         </SwiperSlide>
         <SwiperSlide>
           <Box className="review">
-            <Box className="review-inner">
-              <img src={customer1} alt="our customer" />
-              <Box>
-                <Box className="customer-name">
-                  <p>Mikita</p>
-                  <p>Hanusenka</p>
+            {isMobile ? (
+              <>
+                <Box className="review-inner">
+                  <img src={customer1} alt="our customer" />
+                  <Box>
+                    <Box className="customer-name">
+                      <p>Mikita</p>
+                      <p>Hanusenka</p>
+                    </Box>
+                  </Box>
                 </Box>
                 <p className="review-text">{t('reviews.review4')}</p>
+              </>
+            ) : (
+              <Box className="review-inner">
+                <img src={customer1} alt="our customer" />
+                <Box>
+                  <Box className="customer-name">
+                    <p>Mikita</p>
+                    <p>Hanusenka</p>
+                  </Box>
+                  <p className="review-text">{t('reviews.review4')}</p>
+                </Box>
               </Box>
-            </Box>
+            )}
           </Box>
         </SwiperSlide>
         <SwiperSlide>
           <Box className="review">
-            <Box className="review-inner">
-              <img src={customer1} alt="our customer" />
-              <Box>
-                <Box className="customer-name">
-                  <p>Alex</p>
+            {isMobile ? (
+              <>
+                <Box className="review-inner">
+                  <img src={customer1} alt="our customer" />
+                  <Box>
+                    <Box className="customer-name">
+                      <p>Alex</p>
+                    </Box>
+                  </Box>
                 </Box>
                 <p className="review-text">{t('reviews.review5')}</p>
+              </>
+            ) : (
+              <Box className="review-inner">
+                <img src={customer1} alt="our customer" />
+                <Box>
+                  <Box className="customer-name">
+                    <p>Alex</p>
+                  </Box>
+                  <p className="review-text">{t('reviews.review5')}</p>
+                </Box>
               </Box>
-            </Box>
+            )}
           </Box>
         </SwiperSlide>
         <SwiperSlide>
           <Box className="review">
-            <Box className="review-inner">
-              <img src={customer1} alt="our customer" />
-              <Box>
-                <Box className="customer-name">
-                  <p>Kirill</p>
-                  <p>Morozov</p>
+            {isMobile ? (
+              <>
+                <Box className="review-inner">
+                  <img src={customer1} alt="our customer" />
+                  <Box>
+                    <Box className="customer-name">
+                      <p>Kirill</p>
+                      <p>Morozov</p>
+                    </Box>
+                  </Box>
                 </Box>
                 <p className="review-text">{t('reviews.review6')}</p>
+              </>
+            ) : (
+              <Box className="review-inner">
+                <img src={customer1} alt="our customer" />
+                <Box>
+                  <Box className="customer-name">
+                    <p>Kirill</p>
+                    <p>Morozov</p>
+                  </Box>
+                  <p className="review-text">{t('reviews.review6')}</p>
+                </Box>
               </Box>
-            </Box>
+            )}
           </Box>
         </SwiperSlide>
       </Swiper>

@@ -12,6 +12,7 @@
   "intro": {
     "heading1": "WYPOŻYCZALNIA ROWERÓW ELEKTRYCZNYCH",
     "heading2": "W POLSCE",
+    "heading-full" : "WYPOŻYCZALNIA ROWERÓW ELEKTRYCZNYCH W POLSCE",
     "body-text": "Zapoznaj się z najprostszą procedurą wynajmu, niezrównanymi cenami na rynku i bezpłatnymi, błyskawicznymi usługami serwisowymi.",
     "card1": "Ocena w Google",
     "card2": "Zadowolonych klientów",
@@ -30,7 +31,8 @@
       "card4title": "Moc",
       "card4text": "750 Wt",
       "card5title": "Więcej informacji",
-      "card5text": "Charakterystyka"
+      "card5text": "Charakterystyka",
+      "card5mobile-text" : "Więcej cech"
     }
   },
   "plans": {

@@ -19,7 +19,6 @@
     background: #FDE4E4;
     border-radius: 24px;
     transition: all .5s ease;
-    display: flex;
     height: 100%;
 }
 
@@ -82,3 +81,52 @@
         margin-top: 140px;
     }
 }
+
+@media (max-width: 1130px) {
+    .review-text {
+        padding: 0 48px 48px 48px;
+    }
+    .review-inner {
+        padding: 48px 48px 15px 48px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .reviews-block {
+        margin-top: 60px;
+    }
+    .review-text {
+        padding: 0 16px 24px 16px;
+    }
+    .review-inner {
+        padding: 24px 16px 16px 16px;
+    }
+}
+
+@media (max-width: 850px) {
+    .ReviewsSwiper {
+        width: 180vw;
+        left: -40vw;
+    }
+    .review-inner {
+        align-items: center;
+    }
+    .review-text {
+        margin-top: 0;
+        font-size: 14px;
+    }
+    .review img {
+        width: 48px;
+        height: 48px;
+        margin-right: 16px;
+    }
+    .customer-name p {
+        font-size: 16px;
+    }
+    .slider-buttons {
+        gap: 64px;
+        margin-top: 16px;
+    }
+}
+
+

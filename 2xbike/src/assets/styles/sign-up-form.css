@@ -57,22 +57,51 @@ label.Mui-focused {
     color: #010020;
 }
 
-/* Стиль для underline после активации input */
 .MuiInput-underline:after {
     border-bottom-color: #010020;
 }
 
-/* Стиль для fieldset (border) */
 .MuiOutlinedInput-root fieldset {
     border-color: #010020;
 }
 
-/* Стиль для fieldset при наведении курсора */
 .MuiOutlinedInput-root:hover fieldset {
     border-color: #010020;
 }
 
-/* Стиль для fieldset при активации input */
 .MuiOutlinedInput-root.Mui-focused fieldset {
     border-color: #010020;
+}
+
+@media (max-width: 1024px) {
+    .sign-up-block {
+        margin-top: 60px;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 850px) {
+    .sign-up-block {
+        flex-direction: column;
+        gap: 36px;
+    }
+    .form-info-block {
+        margin-bottom: 16px;
+        gap: 16px;
+    }
+    .sign-in-form-part {
+        width: 100%;
+    }
+    .MuiTextField-root.sign-in-form-input .MuiInputBase-root {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .submit-sign-up {
+        height: 48px;
+        border-radius: 16px;
+    }
+    .have-account {
+        margin-top: 16px;
+        justify-content: center;
+    }
 }

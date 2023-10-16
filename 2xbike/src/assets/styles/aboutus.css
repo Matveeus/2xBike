@@ -60,3 +60,55 @@
     }
 }
 
+@media (max-width: 1130px) {
+    .text-block p {
+        margin-bottom: 24px;
+
+    }
+    .text-block hr {
+        width: 100%;
+    }
+    .text-part {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .about-us-block {
+        margin-top: 60px;
+        display: block;
+        height: auto;
+    }
+    .office-image {
+        width: 100%;
+        height: 400px;
+        margin-bottom: 20px;
+        margin-top: 36px;
+    }
+    .text-part {
+        width: 100%;
+    }
+    .text-block {
+        box-sizing: border-box;
+    }
+    .ReviewsSwiper {
+        margin-top: 36px;
+    }
+    .slider-buttons {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 850px) {
+    .text-block {
+        padding: 24px;
+    }
+    .text-block p {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .office-image {
+        height: 260px;
+    }
+}
+

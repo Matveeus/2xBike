@@ -21,5 +21,17 @@
     font-size: 18px;
     font-family: Inter, serif;
     font-weight: 400;
+}
 
+@media (max-width: 1024px) {
+    .footer {
+        padding: 20px 0;
+    }
+    .all-contacts {
+        margin-top: 36px;
+    }
+    .footer-content {
+        padding-bottom: 16px;
+        margin-bottom: 16px;
+    }
 }

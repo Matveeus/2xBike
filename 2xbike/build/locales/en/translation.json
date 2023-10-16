@@ -11,8 +11,9 @@
         }
 },
   "intro": {
-    "heading1": "FIRST E-BIKE RENTAL SERVICE",
+    "heading1": "E-BIKE RENTAL SERVICE",
     "heading2": "IN POLAND",
+    "heading-full" : "E-BIKE RENTAL SERVICE IN POLAND",
     "body-text": "Explore the most hassle-free rental procedure, unbeatable market prices, and complimentary, lightning-fast maintenance services.",
     "card1": "Rating in Google",
     "card2": "Satisfied customers",
@@ -31,7 +32,8 @@
       "card4title": "Power",
       "card4text": "750 Wt",
       "card5title": "More info",
-      "card5text": "Characteristics"
+      "card5text": "Characteristics",
+      "card5mobile-text" : "More characteristics"
     }
   },
   "plans": {

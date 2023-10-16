@@ -30,6 +30,7 @@
     position: relative;
     padding: 48px 80px;
     border: 2px solid #CE1212;
+    justify-content: space-between;
 }
 
 .additions {
@@ -135,6 +136,83 @@
     }
     .additions-block {
         margin-top: 140px;
+    }
+}
+
+@media (max-width: 1130px) {
+    .rent-card-title, .rent-card-price {
+        font-size: 36px;
+    }
+    .additions-block {
+        margin-top: 140px;
+    }
+    .rent-card, .addition-card {
+        padding: 36px 48px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .additions-block, .plans-block {
+        margin-top: 60px;
+    }
+    .additions {
+        margin-top: 36px;
+    }
+}
+
+@media (max-width: 850px) {
+    .rent-card, .addition-card {
+        border-radius: 20px;
+        padding: 24px;
+    }
+    .rent-card {
+        flex-direction: column;
+        height: auto;
+        gap: 16px;
+    }
+    .about-plan {
+        gap: 16px;
+    }
+    .rent-card-title {
+        font-weight: 500;
+        font-size: 24px;
+    }
+    .rent-card-desc {
+        text-align: left;
+        font-size: 14px;
+        margin-left: 0;
+    }
+    .rent-card-title, .about-plan {
+        width: 100%;
+    }
+    .rent-card-price {
+        text-align: left;
+        font-size: 18px;
+    }
+    .about-plan .dark-button, .addition-card .dark-button {
+        width: 100%;
+        max-width: 100%;
+        font-size: 14px;
+        height: 48px;
+        border-radius: 16px;
+    }
+    .white-circle1, .white-circle2 {
+        top: 35%;
+    }
+    .white-circle1 {
+        left: -30px;
+    }
+    .white-circle2 {
+        right: -30px;
+    }
+    .additions {
+        display: block;
+    }
+    .addition-card {
+        box-sizing: border-box;
+    }
+    .addition-card:not(:last-child) {
+        margin-bottom: 16px;
     }
 }
 
