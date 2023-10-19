@@ -33,7 +33,24 @@
       "card5title": "Więcej informacji",
       "card5text": "Charakterystyka",
       "card5mobile-text" : "Więcej cech"
-    }
+    },
+    "stat1name": "Waga roweru:",
+    "stat2name": "Materiał ramy:",
+    "stat3name": "Liczba biegów:",
+    "stat4name": "Typ roweru:",
+    "stat5name": "Maksymalne obciążenie:",
+    "stat6name": "Rozmiar kół:",
+    "stat7name": "Rok modelu:",
+    "stat8name": "",
+    "stat1": "28 kg",
+    "stat2": "stop aluminium",
+    "stat4": "MTB",
+    "stat5": "150 kg",
+    "stat6": "29 cali",
+    "stat7": "",
+    "stat8": "",
+    "close-modal": "Zamknij"
+
   },
   "plans": {
     "heading": "WYBIERZ SWÓJ PLAN NAJMU",

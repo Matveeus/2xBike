@@ -2,6 +2,10 @@ p {
   margin: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .container {
   display: flex;
   width: 86%;

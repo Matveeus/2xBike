@@ -16,7 +16,12 @@ export default function SignUpForm() {
   } = useForm({ mode: 'onBlur' });
 
   const [showPassword, setShowPassword] = useState(false);
+  const [loginForm, setLoginForm] = useState(false);
   const handleClickShowPassword = () => setShowPassword(!showPassword);
+
+  const handleFormChange = () => {
+    setLoginForm(!loginForm);
+  };
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -52,18 +57,20 @@ export default function SignUpForm() {
               <p>{t('sign-up.info')}</p>
             </Box>
             <form onSubmit={handleSubmit(onSubmit)}>
-              <TextField
-                className="sign-in-form-input"
-                type="text"
-                placeholder={t('sign-up.name-placeholder')}
-                onChange={handleNameChange}
-                {...register('name', {
-                  required: t('sign-up.name-req'),
-                })}
-                error={!!errors?.name}
-                helperText={!!errors.name && errors.name.message}
-                fullWidth
-              />
+              {loginForm ? null : (
+                <TextField
+                  className="sign-in-form-input"
+                  type="text"
+                  placeholder={t('sign-up.name-placeholder')}
+                  onChange={handleNameChange}
+                  {...register('name', {
+                    required: t('sign-up.name-req'),
+                  })}
+                  error={!!errors?.name}
+                  helperText={!!errors.name && errors.name.message}
+                  fullWidth
+                />
+              )}
               <TextField
                 className="sign-in-form-input"
                 type="email"
@@ -102,19 +109,21 @@ export default function SignUpForm() {
                 helperText={!!errors.password && errors.password.message}
                 fullWidth
               />
-              <TextField
-                className="sign-in-form-input"
-                type={showPassword ? 'text' : 'password'}
-                placeholder={t('sign-up.confirm-password-placeholder')}
-                onChange={handlePasswordConfirmChange}
-                {...register('passwordConfirm', {
-                  required: t('sign-up.password-confirm-req'),
-                  validate: value => value === password,
-                })}
-                error={!!errors.passwordConfirm}
-                helperText={!!errors.passwordConfirm && errors.passwordConfirm.message}
-                fullWidth
-              />
+              {loginForm ? null : (
+                <TextField
+                  className="sign-in-form-input"
+                  type={showPassword ? 'text' : 'password'}
+                  placeholder={t('sign-up.confirm-password-placeholder')}
+                  onChange={handlePasswordConfirmChange}
+                  {...register('passwordConfirm', {
+                    required: t('sign-up.password-confirm-req'),
+                    validate: value => value === password,
+                  })}
+                  error={!!errors.passwordConfirm}
+                  helperText={!!errors.passwordConfirm && errors.passwordConfirm.message}
+                  fullWidth
+                />
+              )}
               <button className="dark-button submit-sign-up" type="submit">
                 {t('sign-up.submit-form')}
               </button>
@@ -123,7 +132,9 @@ export default function SignUpForm() {
         </Box>
         <Box className="have-account">
           <p>{t('sign-up.have-account')}</p>
-          <span>{t('sign-up.have-account-log-in')}</span>
+          <button type="button" onClick={handleFormChange}>
+            {t('sign-up.have-account-log-in')}
+          </button>
         </Box>
       </Box>
     </Box>

@@ -10,6 +10,10 @@ export default function Footer() {
     <footer className="footer">
       <Box className="container footer-content">
         <Logo />
+        <Box className="footer-links">
+          <a href="/">Offer agreement</a>
+          <a href="/">Privacy policy</a>
+        </Box>
         <Box className="payment-providers">
           <img src={visa} alt="visa" />
           <img src={mastercard} alt="mastercard" />

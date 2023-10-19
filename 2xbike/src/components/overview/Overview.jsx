@@ -62,7 +62,6 @@ export default function Overview() {
       <Box className="overview-block" id="bikes">
         <h2 className="heading">{t('overview.heading')}</h2>
         {isMobile ? <img src={activeBikeImage} alt="active bike" className="active-bike-image" /> : null}
-
         <Swiper
           slidesPerView={3}
           spaceBetween={10}

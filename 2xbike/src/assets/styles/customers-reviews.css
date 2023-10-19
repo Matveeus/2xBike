@@ -129,4 +129,11 @@
     }
 }
 
+@media (max-width: 550px) {
+    .ReviewsSwiper {
+        width: 200vw;
+        left: -50vw;
+    }
+}
+
 

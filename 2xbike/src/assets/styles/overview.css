@@ -80,7 +80,6 @@
     padding: 16px;
     color: #FFFFFF;
     border-radius: 24px;
-    width: 200px;
     font-size: 24px;
     font-family: Inter, serif;
     font-weight: 500;
@@ -90,6 +89,7 @@
 }
 
 .stats-card div, .dark-button div {
+    width: 100%;
     display: flex;
     align-items: center;
     font-size: 18px;
@@ -109,6 +109,56 @@
     margin-left: auto;
 }
 
+.css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+    padding: 64px;
+    position: relative;
+    min-width: 800px;
+    box-sizing: border-box;
+    border: 1px solid #010020;
+    border-radius: 24px !important;
+}
+
+.characteristic-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.characteristic-modal h3 {
+    color: #CE1212;
+    font-family: Inter, serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+}
+
+.full-stat {
+    font-family: Inter, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    color: #010020;
+    display: flex;
+    justify-content: space-between;
+}
+
+.characteristic-modal .close-icon{
+    border: none;
+    background: none;
+    position: absolute;
+    right: 64px;
+    top: 64px;
+    cursor: pointer;
+}
+
+.close-modal {
+    width: 100%;
+    height: 48px;
+    border-radius: 16px;
+}
+
 @media (max-width: 1430px) {
     .overview-block {
         margin-top: 160px;
@@ -118,13 +168,16 @@
     }
 
     .all-stats .dark-button {
-        width: 19%;
+        width: 21%;
     }
 }
 
 @media (max-width: 1130px) {
     .all-stats .dark-button, .stats-card  {
         font-size: 18px;
+    }
+    .all-stats .dark-button {
+        text-align: left;
     }
 }
 
@@ -138,6 +191,10 @@
     .all-stats .dark-button, .stats-card {
         width: 100%;
         box-sizing: border-box;
+    }
+    .all-stats .dark-button {
+        text-align: center;
+        flex-direction: unset;
     }
     .stats-card {
         margin-bottom: 20px;
@@ -155,6 +212,9 @@
     .stats-card div, .dark-button div {
         margin-bottom: 0;
     }
+    .css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+        min-width: 600px;
+    }
 }
 
 @media (max-width: 850px) {
@@ -162,7 +222,7 @@
         margin-top: 20px;
     }
     .overview-block {
-        margin-top: -50px;
+        margin-top: 40px;
     }
     .swiper-slide-next img, .swiper-slide-prev img {
         border: none;
@@ -198,6 +258,20 @@
     }
     .all-stats .dark-button {
         border-radius: 16px;
+    }
+    .css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+        min-width: 90%;
+        padding: 20px;
+    }
+    .characteristic-modal {
+        gap: 16px;
+    }
+    .full-stat {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .characteristic-modal h3 {
+        font-size: 24px;
     }
 }
 

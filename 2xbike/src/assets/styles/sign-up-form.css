@@ -48,9 +48,15 @@
     font-weight: 500;
 }
 
-.have-account span {
+.have-account button {
     color: #CE1212;
     cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-style: normal;
+    font-family: Inter, serif;
+    font-weight: 500;
 }
 
 label.Mui-focused {
@@ -92,16 +98,17 @@ label.Mui-focused {
     .sign-in-form-part {
         width: 100%;
     }
-    .MuiTextField-root.sign-in-form-input .MuiInputBase-root {
+    .MuiTextField-root.sign-in-form-input .MuiInputBase-root, .have-account, .have-account button {
         font-size: 14px;
         font-weight: 400;
     }
     .submit-sign-up {
         height: 48px;
         border-radius: 16px;
+        font-size: 14px;
     }
     .have-account {
-        margin-top: 16px;
+        margin-top: 20px;
         justify-content: center;
     }
 }

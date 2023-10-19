@@ -1,6 +1,6 @@
 import { Box } from '@mui/material';
 import React from 'react';
-import logo from '../assets/images/logo.png';
+import logo from '../assets/images/x2bike-logo.svg';
 
 export default function Logo() {
   return (

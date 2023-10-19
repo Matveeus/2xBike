@@ -139,6 +139,7 @@
     border: none;
     max-width: 24px;
     height: 24px;
+    padding: 0;
 }
 
 .menu-header {
@@ -169,7 +170,7 @@
     font-family: Inter, serif;
     font-weight: 400;
     width: 170px;
-    height: 56px;
+    height: 48px;
     border-radius: 16px;
 }
 
@@ -179,6 +180,12 @@
     align-items: center;
     margin-top: auto;
     margin-bottom: 30px;
+}
+
+@media (max-width: 850px) {
+    .header-inner.visible {
+        padding: 20px 0;
+    }
 }
 
 
