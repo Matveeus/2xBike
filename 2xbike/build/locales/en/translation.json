@@ -11,9 +11,9 @@
         }
 },
   "intro": {
-    "heading1": "E-BIKE RENTAL SERVICE",
-    "heading2": "IN POLAND",
-    "heading-full" : "E-BIKE RENTAL SERVICE IN POLAND",
+    "heading1": "PROFIT",
+    "heading2": "SPEED",
+    "heading3": "BIKE",
     "body-text": "Explore the most hassle-free rental procedure, unbeatable market prices, and complimentary, lightning-fast maintenance services.",
     "card1": "Rating in Google",
     "card2": "Satisfied customers",
@@ -34,7 +34,23 @@
       "card5title": "More info",
       "card5text": "Characteristics",
       "card5mobile-text" : "More characteristics"
-    }
+    },
+    "stat1name": "Weight of the bike:",
+    "stat2name": "Frame material:",
+    "stat3name": "Number of gears:",
+    "stat4name": "Type of bike:",
+    "stat5name": "Maximum load:",
+    "stat6name": "Wheel size:",
+    "stat7name": "Model year:",
+    "stat8name": "",
+    "stat1": "28 kg",
+    "stat2": "aluminum alloy",
+    "stat4": "MTB",
+    "stat5": "150 kg",
+    "stat6": "29 inches",
+    "stat7": "",
+    "stat8": "",
+    "close-modal" : "Close"
   },
   "plans": {
     "heading": "CHOOSE YOUR RENT PLAN",
