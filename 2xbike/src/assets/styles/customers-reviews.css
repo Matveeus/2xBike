@@ -74,6 +74,10 @@
 .review-text {
     padding: 0 48px 48px 148px;
     text-align: left;
+    font-family: Inter, serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
 }
 
 @media (max-width: 1430px) {
