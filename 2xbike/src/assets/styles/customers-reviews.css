@@ -100,6 +100,25 @@
         margin-top: 0;
         font-size: 14px;
     }
+    .ReviewsSwiper {
+        width: 180vw;
+        left: -40vw;
+    }
+    .review-inner {
+        align-items: center;
+    }
+    .review img {
+        width: 48px;
+        height: 48px;
+        margin-right: 16px;
+    }
+    .customer-name p {
+        font-size: 16px;
+    }
+    .slider-buttons {
+        gap: 64px;
+        margin-top: 16px;
+    }
 }
 
 @media (max-width: 1024px) {

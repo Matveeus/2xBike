@@ -37,6 +37,20 @@ export default function CustomersReviews() {
               <img src={customer1} alt="our customer" />
               <Box>
                 <Box className="customer-name">
+                  <p>Kirill</p>
+                  <p>Morozov</p>
+                </Box>
+              </Box>
+            </Box>
+            <p className="review-text">{t('reviews.review6')}</p>
+          </Box>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Box className="review">
+            <Box className="review-inner">
+              <img src={customer1} alt="our customer" />
+              <Box>
+                <Box className="customer-name">
                   <p>Olzhas</p>
                   <p>Amanzhan</p>
                 </Box>
@@ -51,11 +65,12 @@ export default function CustomersReviews() {
               <img src={customer1} alt="our customer" />
               <Box>
                 <Box className="customer-name">
-                  <p>么ᎷᎬᏞᏆᎾᎠᎪᎦ乡</p>
+                  <p>Mikita</p>
+                  <p>Hanusenka</p>
                 </Box>
               </Box>
             </Box>
-            <p className="review-text">{t('reviews.review2')}</p>
+            <p className="review-text">{t('reviews.review3')}</p>
           </Box>
         </SwiperSlide>
         <SwiperSlide>
@@ -64,12 +79,11 @@ export default function CustomersReviews() {
               <img src={customer1} alt="our customer" />
               <Box>
                 <Box className="customer-name">
-                  <p>Mikita</p>
-                  <p>Hanusenka</p>
+                  <p>么ᎷᎬᏞᏆᎾᎠᎪᎦ乡</p>
                 </Box>
               </Box>
             </Box>
-            <p className="review-text">{t('reviews.review3')}</p>
+            <p className="review-text">{t('reviews.review2')}</p>
           </Box>
         </SwiperSlide>
         <SwiperSlide>
@@ -97,20 +111,6 @@ export default function CustomersReviews() {
               </Box>
             </Box>
             <p className="review-text">{t('reviews.review5')}</p>
-          </Box>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Box className="review">
-            <Box className="review-inner">
-              <img src={customer1} alt="our customer" />
-              <Box>
-                <Box className="customer-name">
-                  <p>Kirill</p>
-                  <p>Morozov</p>
-                </Box>
-              </Box>
-            </Box>
-            <p className="review-text">{t('reviews.review6')}</p>
           </Box>
         </SwiperSlide>
       </Swiper>
