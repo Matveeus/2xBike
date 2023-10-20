@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a6b47e62.css",
-    "main.js": "/static/js/main.85790626.js",
+    "main.css": "/static/css/main.3736336c.css",
+    "main.js": "/static/js/main.0e11b2de.js",
     "static/js/787.abe8d809.chunk.js": "/static/js/787.abe8d809.chunk.js",
     "static/media/ivan.jpeg": "/static/media/ivan.f750c351ea2e35d40b58.jpeg",
     "static/media/back.png": "/static/media/back.1400c1de806a21ed38ca.png",
@@ -23,12 +23,12 @@
     "static/media/close-cross.svg": "/static/media/close-cross.a5c665660b7ea2db28ebe51af24a3694.svg",
     "static/media/arrow-down.svg": "/static/media/arrow-down.22a0cd112d7aaaf9a1f2969531f42c23.svg",
     "static/media/burger-menu.svg": "/static/media/burger-menu.7578e191a0f70fd493b75bc9c7d87eea.svg",
-    "main.a6b47e62.css.map": "/static/css/main.a6b47e62.css.map",
-    "main.85790626.js.map": "/static/js/main.85790626.js.map",
+    "main.3736336c.css.map": "/static/css/main.3736336c.css.map",
+    "main.0e11b2de.js.map": "/static/js/main.0e11b2de.js.map",
     "787.abe8d809.chunk.js.map": "/static/js/787.abe8d809.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6b47e62.css",
-    "static/js/main.85790626.js"
+    "static/css/main.3736336c.css",
+    "static/js/main.0e11b2de.js"
   ]
 }
