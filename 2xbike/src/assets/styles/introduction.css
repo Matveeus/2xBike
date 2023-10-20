@@ -86,15 +86,17 @@
     justify-content: space-between;
 }
 
-.intro-buttons button {
+.intro-buttons a {
     width: 45%;
-    height: 60px;
+    padding: 18px 0;
+    height: fit-content;
     border-radius: 24px;
     font-size: 18px;
     font-family: Inter, serif;
     font-weight: 500;
     border: 1px solid #010020;
     cursor: pointer;
+    text-align: center;
 }
 
 .intro-buttons .login-button {
@@ -125,7 +127,7 @@
     .under-text {
         line-height: 0.5;
     }
-    .intro-buttons button {
+    .intro-buttons a {
         width: 48%;
     }
 }
@@ -149,7 +151,7 @@
         flex-direction: column;
         gap: 16px;
     }
-    .intro-buttons button {
+    .intro-buttons a {
         width: 100%;
     }
     .bike-intro {
@@ -204,7 +206,7 @@
     .intro-buttons {
         margin-top: 20px;
     }
-    .intro-buttons button {
+    .intro-buttons a {
         font-size: 14px;
         border-radius: 16px;
     }
@@ -217,8 +219,8 @@
         margin: 10px 0 30px 0;
         font-size: 14px;
     }
-    .intro-buttons button {
-        height: 48px;
+    .intro-buttons a {
+        padding: 13px 0;
     }
 }
 

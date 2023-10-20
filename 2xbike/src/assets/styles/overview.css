@@ -109,7 +109,7 @@
     margin-left: auto;
 }
 
-.css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+.MuiDialog-paperScrollPaper {
     padding: 64px;
     position: relative;
     min-width: 800px;
@@ -212,7 +212,7 @@
     .stats-card div, .dark-button div {
         margin-bottom: 0;
     }
-    .css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+    .MuiDialog-paperScrollPaper {
         min-width: 600px;
     }
 }
@@ -259,7 +259,7 @@
     .all-stats .dark-button {
         border-radius: 16px;
     }
-    .css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+    .MuiDialog-paperScrollPaper {
         min-width: 90%;
         padding: 20px;
     }
