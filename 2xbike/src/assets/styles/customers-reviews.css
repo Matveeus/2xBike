@@ -84,6 +84,7 @@
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
+    -webkit-text-size-adjust: none;
 }
 
 @media (max-width: 1430px) {
@@ -102,6 +103,11 @@
 }
 
 @media (max-width: 850px) {
+    .review-text {
+        margin-top: 0;
+        font-size: 14px;
+        -webkit-text-size-adjust: none;
+    }
     .review-inner {
         align-items: center;
     }
@@ -132,9 +138,6 @@
 }
 
 @media (max-width: 550px) {
-    .review .review-text {
-        font-size: 14px !important;
-    }
     .ReviewsSwiper {
         width: 200vw;
         left: -50vw;
