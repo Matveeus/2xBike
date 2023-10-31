@@ -11,18 +11,20 @@ export default function Question({ number, question, answer }) {
   };
   return (
     <Box className="question-block">
-      <Box className="question">
-        <h4>{number}</h4>
-        <Box>
-          <p className="question-text">{question}</p>
-          <Collapse in={open} timeout="auto" unmountOnExit>
-            <p className="answer-text">{answer}</p>
-          </Collapse>
+      <Box className="question-block-inner">
+        <Box className="question">
+          <h4>{number}</h4>
+          <Box>
+            <p className="question-text">{question}</p>
+          </Box>
         </Box>
+        <Button className="expand-answer white-button" onClick={handleClick}>
+          {open ? <img src={expandLess} alt="expend less" /> : <img src={expandMore} alt="expend more" />}
+        </Button>
       </Box>
-      <Button className="expand-answer white-button" onClick={handleClick}>
-        {open ? <img src={expandLess} alt="expend less" /> : <img src={expandMore} alt="expend more" />}
-      </Button>
+      <Collapse in={open} timeout="auto" unmountOnExit>
+        <p className="answer-text">{answer}</p>
+      </Collapse>
     </Box>
   );
 }

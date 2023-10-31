@@ -3,7 +3,6 @@ import { Box, useMediaQuery } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import IntroButtons from './IntroButtons';
 import bikeMain from '../../assets/images/main-bike.png';
-import arrowTop from '../../assets/images/arrow-top.png';
 
 export default function BikeIntro() {
   const { t } = useTranslation();
@@ -14,47 +13,34 @@ export default function BikeIntro() {
         <>
           <Box className="headings-intro">
             <h1 className="heading">
-              <span>2X </span>
-              PROFIT
+              <span>x2 </span>
+              Speed
             </h1>
             <h1 className="heading">
-              <span>2X </span>
-              SPEED
+              <span>x2 </span>
+              Profit
             </h1>
             <h1 className="heading">
-              <span>2X </span>
-              BIKE
+              <span>x2 </span>
+              Bike
             </h1>
           </Box>
           <img className="bike scale" src={bikeMain} alt="Electric bike" />
           <p className="intro-info">{t('intro.body-text')}</p>
-          <Box className="cards">
-            <Box className="about-bike first-card">
-              <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <p className="card-number">4.9</p>
-                <img src={arrowTop} alt="arrow up" />
-              </Box>
-              <p className="card-text">{t('intro.card1')}</p>
-            </Box>
-            <Box className="about-bike">
-              <p className="card-number">20K+</p>
-              <p className="card-text">{t('intro.card2')}</p>
-            </Box>
-          </Box>
         </>
       ) : (
         <>
           <h1 className="heading">
-            <span>2X </span>
-            PROFIT
+            <span>x2 </span>
+            Speed
           </h1>
           <h1 className="heading">
-            <span>2X </span>
-            SPEED
+            <span>x2 </span>
+            Profit
           </h1>
           <h1 className="heading">
-            <span>2X </span>
-            BIKE
+            <span>x2 </span>
+            Bike
           </h1>
           <p className="intro-info">{t('intro.body-text')}</p>
           <IntroButtons />

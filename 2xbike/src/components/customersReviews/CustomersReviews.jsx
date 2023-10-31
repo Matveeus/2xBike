@@ -7,8 +7,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import arrowLeft from '../../assets/images/arrow-left.png';
-import arrowRight from '../../assets/images/arrow-right.png';
+import arrowLeft from '../../assets/images/icons/arrow-left.svg';
+import arrowRight from '../../assets/images/icons/arrow-right.svg';
 import customer1 from '../../assets/images/customers/ivan.jpeg';
 
 export default function CustomersReviews() {
@@ -115,10 +115,10 @@ export default function CustomersReviews() {
         </SwiperSlide>
       </Swiper>
       <Box className="slider-buttons">
-        <button type="button" className="prev-review dark-button">
+        <button type="button" className="prev-review">
           <img src={arrowLeft} alt="arrow left" />
         </button>
-        <button type="button" className="next-review dark-button">
+        <button type="button" className="next-review">
           <img src={arrowRight} alt="arrow right" />
         </button>
       </Box>

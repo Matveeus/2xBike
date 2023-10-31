@@ -46,9 +46,6 @@ export default function MobileNavigation() {
               <Link to="rent" className="nav-item" spy smooth offset={-150} duration={2000} onClick={handleClose}>
                 {t('header.navigation.rent').toUpperCase()}
               </Link>
-              <Link to="reviews" className="nav-item" spy smooth offset={-160} duration={2000} onClick={handleClose}>
-                {t('header.navigation.reviews').toUpperCase()}
-              </Link>
               <Link
                 to="about-company"
                 className="nav-item"
@@ -59,6 +56,9 @@ export default function MobileNavigation() {
                 onClick={handleClose}
               >
                 {t('header.navigation.about_company').toUpperCase()}
+              </Link>
+              <Link to="reviews" className="nav-item" spy smooth offset={-160} duration={2000} onClick={handleClose}>
+                {t('header.navigation.reviews').toUpperCase()}
               </Link>
               <Link to="contacts" className="nav-item" spy smooth offset={-90} duration={2000} onClick={handleClose}>
                 {t('header.navigation.contacts').toUpperCase()}

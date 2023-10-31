@@ -1,3 +1,4 @@
+/* eslint-disable prefer-template */
 import React from 'react';
 import { Box } from '@mui/material';
 import { useTranslation } from 'react-i18next';
@@ -13,26 +14,26 @@ export default function RentPlans() {
         <RentCard
           title={t('plans.plans.plan1Title')}
           description={t('plans.plans.plan1Desc')}
+          number="200"
           price={t('plans.plans.plan1Price')}
-          buttonTitle={t('plans.plans.plan1Button')}
         />
         <RentCard
           title={t('plans.plans.plan2Title')}
           description={t('plans.plans.plan2Desc')}
+          number="250"
           price={t('plans.plans.plan2Price')}
-          buttonTitle={t('plans.plans.plan2Button')}
         />
         <RentCard
           title={t('plans.plans.plan3Title')}
           description={t('plans.plans.plan3Desc')}
+          number="70"
           price={t('plans.plans.plan3Price')}
-          buttonTitle={t('plans.plans.plan3Button')}
         />
         <RentCard
           title={t('plans.plans.plan4Title')}
           description={t('plans.plans.plan4Desc')}
+          number="50"
           price={t('plans.plans.plan4Price')}
-          buttonTitle={t('plans.plans.plan4Button')}
         />
       </Box>
     </Box>

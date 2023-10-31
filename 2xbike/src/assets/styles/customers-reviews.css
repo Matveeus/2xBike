@@ -13,13 +13,17 @@
     width: 48px;
     height: 48px;
     border-radius: 50%;
+    background: #FFFFFF;
+    border: 1px solid #010020;
+    cursor: pointer;
 }
 
 .review {
-    background: #FDE4E4;
+    background: #FFFFFF;
     border-radius: 24px;
     transition: all .5s ease;
     height: 100%;
+    box-sizing: border-box;
 }
 
 .review-inner {
@@ -33,11 +37,13 @@
 
 .swiper-slide-active .review{
     background: #CE1212;
+    border: 1px solid #CE1212;
 }
 
 .swiper-slide-next .review, .swiper-slide-prev .review {
-    background: #FDE4E4;
+    background: #FFFFFF;
     color: #010020;
+    border: 1px solid #010020;
 }
 
 .swiper-slide-next .customer-name p, .swiper-slide-prev .customer-name p {

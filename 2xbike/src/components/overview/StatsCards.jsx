@@ -58,40 +58,41 @@ export default function StatsCards() {
         </>
       ) : (
         <>
-          <Box className="stats-card">
-            <Box>
-              <img src={mileage} alt="mileage of bike" />
-              <p>{t('overview.cards.card1title')}</p>
+          <Box className="cards-group">
+            <Box className="stats-card">
+              <Box>
+                <img src={mileage} alt="mileage of bike" />
+                <p>{t('overview.cards.card1title').toUpperCase()}</p>
+              </Box>
+              <p className="bike-stat">{t('overview.cards.card1text').toUpperCase()}</p>
             </Box>
-            <p>{t('overview.cards.card1text')}</p>
-          </Box>
-          <Box className="stats-card">
-            <Box>
-              <img src={speed} alt="mileage of bike" />
-              <p>{t('overview.cards.card2title')}</p>
+            <Box className="stats-card">
+              <Box>
+                <img src={speed} alt="mileage of bike" />
+                <p>{t('overview.cards.card2title').toUpperCase()}</p>
+              </Box>
+              <p className="bike-stat">{t('overview.cards.card2text').toUpperCase()}</p>
             </Box>
-            <p>{t('overview.cards.card2text')}</p>
-          </Box>
-          <Box className="stats-card">
-            <Box>
-              <img src={battery} alt="mileage of bike" />
-              <p>{t('overview.cards.card3title')}</p>
+            <Box className="stats-card">
+              <Box>
+                <img src={battery} alt="mileage of bike" />
+                <p>{t('overview.cards.card3title').toUpperCase()}</p>
+              </Box>
+              <p className="bike-stat">{t('overview.cards.card3text').toUpperCase()}</p>
             </Box>
-            <p>{t('overview.cards.card3text')}</p>
-          </Box>
-          <Box className="stats-card">
-            <Box>
-              <img src={power} alt="mileage of bike" />
-              <p>{t('overview.cards.card4title')}</p>
+            <Box className="stats-card">
+              <Box>
+                <img src={power} alt="mileage of bike" />
+                <p>{t('overview.cards.card4title').toUpperCase()}</p>
+              </Box>
+              <p className="bike-stat">{t('overview.cards.card4text').toUpperCase()}</p>
             </Box>
-            <p>{t('overview.cards.card4text')}</p>
           </Box>
           <button onClick={handleClickOpen} type="button" className="dark-button">
             <Box>
               <p>{t('overview.cards.card5title')}</p>
               <img className="arrow-link" src={arrowLink} alt="mileage of bike" />
             </Box>
-            <p>{t('overview.cards.card5text')}</p>
           </button>
         </>
       )}

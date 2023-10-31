@@ -63,14 +63,12 @@
       "plan2Desc": "This package is a basic package that only includes the rental of an e-bike with 2 batteries for a week.",
       "plan3Desc": "This package is a basic package that only includes the rental of an e-bike for a no more than 3 days.",
       "plan4Desc": "This package is a basic package that only includes the rental of an e-bike for not less than 3 days and not more than 14 days.",
-      "plan1Price": "200 zł/week",
-      "plan2Price": "250 zł/week",
-      "plan3Price": "70 zł/day",
-      "plan4Price": "50 zł/day",
-      "plan1Button": "Buy Basic Plan",
-      "plan2Button": "Buy Purchase Plan",
-      "plan3Button": "More info",
-      "plan4Button": "More info"
+      "plan1Price": "zł/week",
+      "plan2Price": "zł/week",
+      "plan3Price": "zł/day",
+      "plan4Price": "zł/day",
+      "planButton": "Buy plan",
+      "planButton2": "Read more"
     }
   },
   "additions": {
@@ -80,8 +78,8 @@
       "addition2Title": "+ HELMET",
       "addition1Desc": "This package is a basic package that only includes the rental of an e-bike for a week.",
       "addition2Desc": "You can rent an additional helmet for an electric bicycle.",
-      "addition1Price": "+50 zł/week",
-      "addition2Price": "+10 zł/week",
+      "addition1Price": "zł/week",
+      "addition2Price": "zł/week",
       "addition1Button": "Buy",
       "addition2Button": "Buy"
     }

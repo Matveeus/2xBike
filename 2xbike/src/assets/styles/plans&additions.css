@@ -11,14 +11,26 @@
 }
 
 .rent-card {
-    background-color: #FDE4E4;
-    height: 200px;
+    background: #F4F4F4;
     border-radius: 20px;
     margin-top: 24px;
     position: relative;
+    padding: 48px 32px;
+}
+
+.rent-card hr {
+    margin-top: 48px;
+}
+
+.rent-card-inner {
     display: flex;
-    justify-content: space-between;
-    padding: 48px 80px;
+    align-items: center;
+}
+
+.rent-card-inner .expand-answer {
+    border: 1px solid #010020;
+    min-width: 48px;
+    height: 48px;
 }
 
 .addition-card {
@@ -28,8 +40,8 @@
     width: 100%;
     border-radius: 20px;
     position: relative;
-    padding: 48px 80px;
-    border: 2px solid #CE1212;
+    padding: 48px;
+    background: #F4F4F4;
     justify-content: space-between;
 }
 
@@ -40,79 +52,64 @@
     gap: 30px;
 }
 
-.white-circle1, .white-circle2 {
-    position: absolute;
-    top: 42%;
-    background-color: #FFFFFF;
-    width: 45px;
-    height: 60px;
-    border-radius: 50%;
-}
-
-.addition-card .white-circle1 {
-    border-right: 2px solid #CE1212;
-    left: -28px;
-}
-
-.addition-card .white-circle2 {
-    border-left: 2px solid #CE1212;
-    right: -28px;
-}
-
-.white-circle1 {
-    left: -20px;
-}
-
-.white-circle2 {
-    right: -20px;
-}
-
-.rent-card-title, .about-plan {
-    width: 50%;
+.about-plan {
     color: #010020;
+    display: flex;
+    gap: 16px;
+    margin-left: auto;
+    align-items: center;
 }
 
 .addition-card .rent-card-title {
     width: 100%;
 }
 
+.addition-card-header {
+    display: flex;
+    justify-content: space-between;
+}
+
 .rent-card-title {
-    font-size: 64px;
+    font-size: 40px;
+    width: 300px;
     font-family: Inter, serif;
-    font-weight: 600;
+    font-weight: 500;
     text-align: left;
     margin: 0;
 }
 
-.about-plan .dark-button, .addition-card .dark-button {
+.about-plan .dark-button, .addition-card .dark-button, .expand-answer-text {
     min-width: 200px;
     max-width: 300px;
     width: fit-content;
-    height: 60px;
+    height: 48px;
     padding: 0 16px;
     border-radius: 24px;
     font-size: 18px;
     font-family: Inter, serif;
     font-weight: 500;
-    align-self: flex-end;
+}
+
+.expand-answer-text {
+    border: 1px solid #010020;
 }
 
 .addition-card .dark-button {
-    align-self: flex-start;
-}
-
-.about-plan {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    align-self: flex-end;
 }
 
 .rent-card-desc {
-    margin-left: 30px;
-    text-align: right;
+    text-align: center;
     font-size: 18px;
     font-family: Inter, serif;
     font-weight: 500;
+    margin-top: 24px;
+}
+
+.price-card-block {
+    display: flex;
+    align-items: flex-end;
+    margin-left: auto;
 }
 
 .rent-card-price {
@@ -120,6 +117,16 @@
     font-family: Inter, serif;
     font-weight: 500;
     text-align: right;
+    margin-left: auto;
+    text-wrap: nowrap;
+}
+
+.small-card-price {
+    color: #010020;
+    font-size: 18px;
+    font-family: Inter, serif;
+    font-weight: 500;
+    line-height: 33px;
 }
 
 .addition-card .rent-card-desc, .addition-card .rent-card-price {
@@ -127,12 +134,23 @@
     margin-left: 0;
 }
 
+.mobile-card-header {
+    display: flex;
+}
+
+.addition-card-header .price-card-block {
+    margin-left: unset;
+}
+
+@media (max-width: 1500px) {
+    .addition-card-header {
+        flex-direction: column;
+    }
+}
+
 @media (max-width: 1430px) {
     .plans-block {
         margin-top: 140px;
-    }
-    .rent-card-title {
-        font-size: 48px;
     }
     .additions-block {
         margin-top: 140px;
@@ -158,6 +176,23 @@
     .additions {
         margin-top: 36px;
     }
+    .rent-card-inner {
+        flex-direction: column;
+        align-items: unset;
+    }
+    .about-plan {
+        margin-top: 16px;
+        align-items: unset;
+        margin-left: unset;
+        justify-content: space-between;
+    }
+    .about-plan .dark-button, .addition-card .dark-button, .expand-answer-text {
+        width: 45%;
+        max-width: 45%;
+    }
+    .rent-card hr {
+        margin-top: 24px;
+    }
 }
 
 @media (max-width: 850px) {
@@ -172,6 +207,7 @@
     }
     .about-plan {
         gap: 16px;
+        flex-direction: column;
     }
     .rent-card-title {
         font-weight: 500;
@@ -189,21 +225,15 @@
         text-align: left;
         font-size: 18px;
     }
-    .about-plan .dark-button, .addition-card .dark-button {
+    .about-plan .dark-button, .addition-card .dark-button, .expand-answer-text {
         width: 100%;
         max-width: 100%;
         font-size: 14px;
         height: 48px;
-        border-radius: 16px;
+        border-radius: 48px;
     }
-    .white-circle1, .white-circle2 {
-        top: 35%;
-    }
-    .white-circle1 {
-        left: -30px;
-    }
-    .white-circle2 {
-        right: -30px;
+    .expand-answer-text {
+        height: 30px;
     }
     .additions {
         display: block;
@@ -213,6 +243,20 @@
     }
     .addition-card:not(:last-child) {
         margin-bottom: 16px;
+    }
+    .addition-card-header {
+        flex-direction: unset;
+    }
+    .expand-answer-text {
+        border: none;
+        background: transparent;
+    }
+    .small-card-price {
+        line-height: 21px;
+        margin-left: 5px;
+    }
+    .rent-card hr {
+        margin-top: 16px;
     }
 }
 

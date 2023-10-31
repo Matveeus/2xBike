@@ -87,6 +87,9 @@ label.Mui-focused {
 }
 
 @media (max-width: 850px) {
+    .sign-up-block .heading {
+        width: 100%;
+    }
     .sign-up-block {
         flex-direction: column;
         gap: 36px;

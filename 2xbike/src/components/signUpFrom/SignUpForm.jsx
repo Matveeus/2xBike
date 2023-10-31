@@ -5,6 +5,10 @@ import { useTranslation } from 'react-i18next';
 import { useForm } from 'react-hook-form';
 import { Visibility, VisibilityOff } from '@mui/icons-material';
 import '../../assets/styles/sign-up-form.css';
+import { signInWithEmailAndPassword, updateProfile, createUserWithEmailAndPassword } from 'firebase/auth';
+import auth from '../../services/firebase';
+import Loader from '../Loader';
+import useAuthState from '../../hooks/useAuthState';
 import arrowDown from '../../assets/images/icons/arrow-down.svg';
 
 export default function SignUpForm() {
@@ -13,7 +17,7 @@ export default function SignUpForm() {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm({ mode: 'onBlur' });
+  } = useForm({ mode: 'onSubmit' });
 
   const [showPassword, setShowPassword] = useState(false);
   const [loginForm, setLoginForm] = useState(false);
@@ -27,6 +31,8 @@ export default function SignUpForm() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [passwordConfirm, setPasswordRepeat] = useState('');
+
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleNameChange = e => {
     setName(e.target.value);
@@ -44,7 +50,30 @@ export default function SignUpForm() {
     setPasswordRepeat(e.target.value);
   };
 
-  const onSubmit = () => {};
+  const handleRegister = async () => {
+    try {
+      setIsLoading(true);
+      const { user } = await createUserWithEmailAndPassword(auth, email, password);
+      await updateProfile(user, { displayName: name });
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const handleLogin = async () => {
+    try {
+      setIsLoading(true);
+      await signInWithEmailAndPassword(auth, email, password);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  useAuthState();
+
+  if (isLoading) {
+    return <Loader />;
+  }
 
   return (
     <Box className="container">
@@ -56,26 +85,25 @@ export default function SignUpForm() {
               <img src={arrowDown} alt="arrow down" />
               <p>{t('sign-up.info')}</p>
             </Box>
-            <form onSubmit={handleSubmit(onSubmit)}>
+            <form onSubmit={handleSubmit(loginForm ? handleLogin : handleRegister)}>
               {loginForm ? null : (
                 <TextField
                   className="sign-in-form-input"
                   type="text"
                   placeholder={t('sign-up.name-placeholder')}
-                  onChange={handleNameChange}
                   {...register('name', {
                     required: t('sign-up.name-req'),
                   })}
                   error={!!errors?.name}
                   helperText={!!errors.name && errors.name.message}
                   fullWidth
+                  onChange={handleNameChange}
                 />
               )}
               <TextField
                 className="sign-in-form-input"
                 type="email"
                 placeholder={t('sign-up.email-placeholder')}
-                onChange={handleEmailChange}
                 {...register('email', {
                   required: t('sign-up.email-req'),
                   pattern: {
@@ -86,12 +114,12 @@ export default function SignUpForm() {
                 error={!!errors?.email}
                 helperText={!!errors.email && errors.email.message}
                 fullWidth
+                onChange={handleEmailChange}
               />
               <TextField
                 className="sign-in-form-input"
                 type={showPassword ? 'text' : 'password'}
                 placeholder={t('sign-up.password-placeholder')}
-                onChange={handlePasswordChange}
                 {...register('password', {
                   required: t('sign-up.password-req'),
                   minLength: { value: 6, message: t('sign-up.password-length') },
@@ -108,20 +136,21 @@ export default function SignUpForm() {
                 error={!!errors.password}
                 helperText={!!errors.password && errors.password.message}
                 fullWidth
+                onChange={handlePasswordChange}
               />
               {loginForm ? null : (
                 <TextField
                   className="sign-in-form-input"
                   type={showPassword ? 'text' : 'password'}
                   placeholder={t('sign-up.confirm-password-placeholder')}
-                  onChange={handlePasswordConfirmChange}
                   {...register('passwordConfirm', {
                     required: t('sign-up.password-confirm-req'),
-                    validate: value => value === password,
+                    validate: passwordConfirm === password,
                   })}
                   error={!!errors.passwordConfirm}
                   helperText={!!errors.passwordConfirm && errors.passwordConfirm.message}
                   fullWidth
+                  onChange={handlePasswordConfirmChange}
                 />
               )}
               <button className="dark-button submit-sign-up" type="submit">

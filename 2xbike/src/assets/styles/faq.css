@@ -9,10 +9,14 @@
 
 .question-block {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
     padding-bottom: 24px;
     border-bottom: 1px solid #010020;
+    align-items: center;
+}
+
+.question-block-inner {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -45,6 +49,7 @@
     font-size: 18px;
     font-weight: 400;
     margin-top: 16px;
+    margin-left: 80px;
 }
 
 .expand-answer {
@@ -95,6 +100,12 @@
     }
     .expand-answer:hover {
         background-color: transparent;
+    }
+    .question-block-inner .white-button {
+        border: none;
+    }
+    .question-block-inner .white-button:hover {
+        background-color: #FFFFFF;
     }
 }
 

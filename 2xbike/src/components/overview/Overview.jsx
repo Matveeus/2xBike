@@ -15,8 +15,8 @@ import bikeFront from '../../assets/images/bike/front.png';
 import bikeBack from '../../assets/images/bike/back.png';
 import bikeFrontZoom from '../../assets/images/bike/front-zoom.png';
 import bikeSide from '../../assets/images/bike/side.png';
-import arrowLeft from '../../assets/images/arrow-left.png';
-import arrowRight from '../../assets/images/arrow-right.png';
+import arrowLeft from '../../assets/images/icons/arrow-left.svg';
+import arrowRight from '../../assets/images/icons/arrow-right.svg';
 
 export default function Overview() {
   const { t } = useTranslation();
@@ -89,10 +89,10 @@ export default function Overview() {
           className="mySwiper"
           onSlideChange={swiper => handleSlideChange(swiper)}
         >
-          <button type="button" className="prev-photo dark-button">
+          <button type="button" className="prev-photo">
             <img src={arrowLeft} alt="arrow left" />
           </button>
-          <button type="button" className="next-photo dark-button">
+          <button type="button" className="next-photo">
             <img src={arrowRight} alt="arrow right" />
           </button>
           <SwiperSlide>

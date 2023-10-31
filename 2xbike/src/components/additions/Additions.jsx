@@ -15,11 +15,13 @@ export default function Additions() {
             title={t('additions.additions.addition1Title')}
             description={t('additions.additions.addition1Desc')}
             price={t('additions.additions.addition1Price')}
+            number="+50"
             buttonTitle={t('additions.additions.addition1Button')}
           />
           <AdditionCard
             title={t('additions.additions.addition2Title')}
             description={t('additions.additions.addition2Desc')}
+            number="+10"
             price={t('additions.additions.addition2Price')}
             buttonTitle={t('additions.additions.addition2Button')}
           />

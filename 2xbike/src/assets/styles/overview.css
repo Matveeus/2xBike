@@ -45,6 +45,9 @@
     width: 48px;
     height: 48px;
     border-radius: 50%;
+    border: 1px solid #010020;
+    background: #FFFFFF;
+    cursor: pointer;
 }
 
 .next-photo {
@@ -57,23 +60,23 @@
 }
 
 .all-stats {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    gap: 24px;
     margin-top: 40px;
 }
 
 .stats-card {
     padding: 16px;
-    background-color: #CE1212;
-    color: #FFFFFF;
+    color: #010020;
     border-radius: 24px;
-    width: 200px;
     font-size: 24px;
     font-family: Inter, serif;
     font-weight: 500;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    text-wrap: nowrap;
 }
 
 .all-stats .dark-button {
@@ -88,12 +91,29 @@
     flex-direction: column;
 }
 
+.bike-stat {
+    color: #CE1212;
+}
+
+.cards-group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 24px;
+    border: 1px solid #010020;
+    padding: 8px 32px;
+}
+
 .stats-card div, .dark-button div {
     width: 100%;
     display: flex;
     align-items: center;
     font-size: 18px;
     font-weight: 400;
+    text-align: left;
+}
+
+.stats-card div {
     margin-bottom: 8px;
 }
 
@@ -163,13 +183,6 @@
     .overview-block {
         margin-top: 160px;
     }
-    .stats-card {
-        width: 15%;
-    }
-
-    .all-stats .dark-button {
-        width: 21%;
-    }
 }
 
 @media (max-width: 1130px) {
@@ -178,6 +191,9 @@
     }
     .all-stats .dark-button {
         text-align: left;
+    }
+    .stats-card {
+        text-wrap: wrap;
     }
 }
 

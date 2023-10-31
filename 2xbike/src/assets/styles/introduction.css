@@ -12,6 +12,10 @@
     transform-origin: center center;
 }
 
+.bike-intro .heading {
+    font-size: 96px;
+}
+
 .heading span {
     color: #CE1212;
 }
@@ -45,9 +49,10 @@
 }
 
 .bike {
+    width: 800px;
     position: absolute;
-    top: 0;
-    left: 45%;
+    top: -75px;
+    left: 42%;
 }
 
 .about-bike {
@@ -114,11 +119,16 @@
     .navigation {
         width: 65%;
     }
+    .intro-info {
+        margin: 40px 0 50px 0;
+    }
     .bike-intro {
-        width: 35%;
+        width: 37%;
     }
     .bike {
-        left: 38%;
+        width: 730px;
+        top: -70px;
+        left: 40%;
     }
 
 }
@@ -129,6 +139,9 @@
     }
     .intro-buttons a {
         width: 48%;
+    }
+    .bike-intro .heading {
+        font-size: 80px;
     }
 }
 
@@ -157,16 +170,20 @@
     .bike-intro {
         width: 36%;
     }
+    .bike-intro .heading {
+        font-size: 64px;
+    }
 }
 
 @media (max-width: 1024px) {
     .bike {
-        width: 450px;
+        width: 50vw;
         top: 80px;
-        left: 37%;
+        left: 42%;
     }
     .bike-intro {
         padding: 20px;
+        width: 40%;
     }
     .intro-info {
         margin: 30px 0;
@@ -174,6 +191,11 @@
 }
 
 @media (max-width: 850px) {
+    .bike-intro .heading {
+        width: min-content;
+        text-align: center;
+        font-size: 42px;
+    }
     .headings-intro {
         display: flex;
         justify-content: space-between;
@@ -225,6 +247,11 @@
 }
 
 @media (max-width: 550px) {
+    .bike-intro .heading {
+        width: auto;
+        text-align: left;
+        font-size: 40px;
+    }
     .intro-buttons {
         flex-direction: column;
         gap: 16px;

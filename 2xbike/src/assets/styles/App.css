@@ -2,10 +2,6 @@ p {
   margin: 0;
 }
 
-#root {
-  overflow-x: hidden;
-}
-
 .container {
   display: flex;
   width: 86%;
@@ -13,10 +9,11 @@ p {
 }
 
 .heading {
+  width: 100%;
   color: #010020;
   font-size: 80px;
   font-family: Inter, serif;
-  font-weight: 600;
+  font-weight: 500;
   margin: 0;
 }
 
@@ -52,9 +49,6 @@ p {
   .heading {
     font-size: 62px;
   }
-  .rent-card-title {
-    font-size: 48px;
-  }
 }
 
 @media (max-width: 1230px) {
@@ -71,6 +65,7 @@ p {
 
 @media (max-width: 850px) {
   .heading {
+    text-align: left;
     font-size: 32px;
   }
 }

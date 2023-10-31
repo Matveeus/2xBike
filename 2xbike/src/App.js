@@ -1,33 +1,22 @@
 import React from 'react';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import UserAccount from './pages/UserAccount';
 import './assets/styles/App.css';
-import Header from './components/header/Header';
-import Introduction from './components/introduction/Introduction';
-import Overview from './components/overview/Overview';
-import RentPlans from './components/plans/RentPlans';
-import Additions from './components/additions/Additions';
-import AboutUs from './components/aboutUs/AboutUs';
-import CustomersReviews from './components/customersReviews/CustomersReviews';
-import SignUpForm from './components/signUpFrom/SignUpForm';
-import FAQ from './components/faq/FAQ';
-import Contacts from './components/contacts/Contacts';
-import Footer from './components/footer/Footer';
 
 function App() {
-  return (
-    <>
-      <Header />
-      <Introduction />
-      <Overview />
-      <RentPlans />
-      <Additions />
-      <AboutUs />
-      <CustomersReviews />
-      <SignUpForm />
-      <FAQ />
-      <Contacts />
-      <Footer />
-    </>
-  );
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <HomePage />,
+    },
+    {
+      path: '/account',
+      element: <UserAccount />,
+    },
+  ]);
+
+  return <RouterProvider router={router} />;
 }
 
 export default App;
