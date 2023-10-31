@@ -101,14 +101,8 @@
     }
 }
 
-@media (max-width: 870px) {
-    .review-text {
-        font-size: 14px;
-    }
-}
-
 @media (max-width: 850px) {
-    .review-text {
+    .review .review-text {
         margin-top: 0;
         font-size: 14px;
     }
