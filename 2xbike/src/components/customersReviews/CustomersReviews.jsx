@@ -86,6 +86,19 @@ export default function CustomersReviews() {
             <p className="review-text">{t('reviews.review2')}</p>
           </Box>
         </SwiperSlide>
+        <SwiperSlide>
+          <Box className="review">
+            <Box className="review-inner">
+              <img src={customer1} alt="our customer" />
+              <Box>
+                <Box className="customer-name">
+                  <p>么ᎷᎬᏞᏆᎾᎠᎪᎦ乡</p>
+                </Box>
+              </Box>
+            </Box>
+            <p className="review-text">{t('reviews.review2')}</p>
+          </Box>
+        </SwiperSlide>
       </Swiper>
       <Box className="slider-buttons">
         <button type="button" className="prev-review">
