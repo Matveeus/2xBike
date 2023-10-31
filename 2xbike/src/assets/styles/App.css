@@ -2,6 +2,10 @@ p {
   margin: 0;
 }
 
+body {
+  padding-right: 0 !important;
+}
+
 .container {
   display: flex;
   width: 86%;

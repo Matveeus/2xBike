@@ -101,14 +101,10 @@
     }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 849px) {
     .review-text {
         margin-top: 0;
         font-size: 14px;
-    }
-    .ReviewsSwiper {
-        width: 180vw;
-        left: -40vw;
     }
     .review-inner {
         align-items: center;

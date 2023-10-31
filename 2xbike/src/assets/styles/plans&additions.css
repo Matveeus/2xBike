@@ -81,6 +81,7 @@
 .about-plan .dark-button, .addition-card .dark-button, .expand-answer-text {
     min-width: 200px;
     max-width: 300px;
+    color: #010020;
     width: fit-content;
     height: 48px;
     padding: 0 16px;
