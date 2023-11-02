@@ -1,15 +1,21 @@
 /* eslint-disable prefer-template */
 import React from 'react';
-import { Box } from '@mui/material';
+import { Box, useMediaQuery } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import '../../assets/styles/plans&additions.css';
 import RentCard from './RentCard';
 
 export default function RentPlans() {
   const { t } = useTranslation();
+  const isMobile = useMediaQuery('(max-width: 850px)');
   return (
     <Box className="container">
       <Box className="plans-block" id="rent">
+        {isMobile ? (
+          <h2 className="heading0">{t('plans.heading0').toUpperCase()}</h2>
+        ) : (
+          <h2 className="heading0">{t('plans.heading0')}</h2>
+        )}
         <h2 className="heading">{t('plans.heading')}</h2>
         <RentCard
           title={t('plans.plans.plan1Title')}

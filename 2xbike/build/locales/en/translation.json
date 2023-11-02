@@ -21,6 +21,7 @@
     "login_button": "Log in"
   },
   "overview": {
+    "heading0": "Revision",
     "heading": "NEW E-BIKE OVERVIEW",
     "cards": {
       "card1title": "Mileage",
@@ -53,6 +54,7 @@
     "close-modal" : "Close"
   },
   "plans": {
+    "heading0": "Tariffs",
     "heading": "CHOOSE YOUR RENT PLAN",
     "plans": {
       "plan1Title": "+1 BATTERY",
@@ -72,6 +74,7 @@
     }
   },
   "additions": {
+    "heading0": "More",
     "heading": "ADDITIONS",
     "additions": {
       "addition1Title": "+1 BATTERY",
@@ -85,9 +88,11 @@
     }
   },
   "aboutus": {
+    "heading0": "Company",
     "heading": "ABOUT US"
   },
   "reviews": {
+    "heading0": "Reviews",
     "heading": "OUR CUSTOMER SAYS",
     "review1": "Great bike rental. I've been using it for several months and have no complaints. I recommend it to everyone looking for bikes.",
     "review2": "I work at Glovo on a regular bike, and I make 150 zlotys a day at best. On x2bike, I made 265 zlotys on the very first day and set it up on the scooter in the app. Very satisfied. A really good tool for earning money.",

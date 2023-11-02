@@ -6,6 +6,7 @@ import RentPlans from '../components/plans/RentPlans';
 import Additions from '../components/additions/Additions';
 import AboutUs from '../components/aboutUs/AboutUs';
 import CustomersReviews from '../components/customersReviews/CustomersReviews';
+import AdditionalImages from '../components/additionalImages/AdditionalImages';
 import SignUpForm from '../components/signUpFrom/SignUpForm';
 import FAQ from '../components/faq/FAQ';
 import Contacts from '../components/contacts/Contacts';
@@ -21,6 +22,7 @@ export default function HomePage() {
       <Additions />
       <AboutUs />
       <CustomersReviews />
+      <AdditionalImages />
       <SignUpForm />
       <FAQ />
       <Contacts />

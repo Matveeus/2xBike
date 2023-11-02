@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box } from '@mui/material';
+import { Box, useMediaQuery } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import '../../assets/styles/customers-reviews.css';
 /* eslint-disable import/no-unresolved */
@@ -13,9 +13,15 @@ import customer1 from '../../assets/images/customers/ivan.jpeg';
 
 export default function CustomersReviews() {
   const { t } = useTranslation();
+  const isMobile = useMediaQuery('(max-width: 850px)');
   return (
     <Box className="reviews-block" id="reviews">
       <Box className="container">
+        {isMobile ? (
+          <h2 className="heading0">{t('reviews.heading0').toUpperCase()}</h2>
+        ) : (
+          <h2 className="heading0">{t('reviews.heading0')}</h2>
+        )}
         <h2 className="heading">{t('reviews.heading')}</h2>
       </Box>
       <Swiper

@@ -13,7 +13,6 @@ import 'swiper/css/scrollbar';
 import StatsCards from './StatsCards';
 import bikeFront from '../../assets/images/bike/front.png';
 import bikeBack from '../../assets/images/bike/back.png';
-import bikeFrontZoom from '../../assets/images/bike/front-zoom.png';
 import bikeSide from '../../assets/images/bike/side.png';
 import arrowLeft from '../../assets/images/icons/arrow-left.svg';
 import arrowRight from '../../assets/images/icons/arrow-right.svg';
@@ -22,7 +21,7 @@ export default function Overview() {
   const { t } = useTranslation();
   const [activeBikeImage, setActiveBikeImage] = useState(bikeFront);
   const isMobile = useMediaQuery('(max-width: 850px)');
-  const bikeImages = [bikeBack, bikeFrontZoom, bikeSide, bikeFront];
+  const bikeImages = [bikeBack, bikeSide, bikeFront];
 
   const handleSlideChange = swiper => {
     let index;
@@ -37,19 +36,13 @@ export default function Overview() {
         index = 2;
         break;
       case 3:
-        index = 3;
-        break;
-      case 4:
         index = 0;
         break;
-      case 5:
+      case 4:
         index = 1;
         break;
-      case 6:
+      case 5:
         index = 2;
-        break;
-      case 7:
-        index = 3;
         break;
       default:
         index = 0;
@@ -60,6 +53,11 @@ export default function Overview() {
   return (
     <Box className="container">
       <Box className="overview-block" id="bikes">
+        {isMobile ? (
+          <h2 className="heading0">{t('overview.heading0').toUpperCase()}</h2>
+        ) : (
+          <h2 className="heading0">{t('overview.heading0')}</h2>
+        )}
         <h2 className="heading">{t('overview.heading')}</h2>
         {isMobile ? <img src={activeBikeImage} alt="active bike" className="active-bike-image" /> : null}
         <Swiper
@@ -99,9 +97,6 @@ export default function Overview() {
             <img src={bikeBack} alt="bike back" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={bikeFrontZoom} alt="bike front zoom" />
-          </SwiperSlide>
-          <SwiperSlide>
             <img src={bikeSide} alt="bike side" />
           </SwiperSlide>
           <SwiperSlide>
@@ -109,9 +104,6 @@ export default function Overview() {
           </SwiperSlide>
           <SwiperSlide>
             <img src={bikeBack} alt="bike back" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={bikeFrontZoom} alt="bike front zoom" />
           </SwiperSlide>
           <SwiperSlide>
             <img src={bikeSide} alt="bike side" />

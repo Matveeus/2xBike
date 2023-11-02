@@ -8,12 +8,18 @@ import us from '../../assets/images/our-photo.png';
 export default function AboutUs() {
   const { t } = useTranslation();
   const isMobile = useMediaQuery('(max-width: 1024px)');
+  const isMobile2 = useMediaQuery('(max-width: 850px)');
   return (
     <>
       {isMobile ? (
         <>
           <Box className="container">
             <Box className="about-us-block" id="about-company">
+              {isMobile2 ? (
+                <h2 className="heading0">{t('aboutus.heading0').toUpperCase()}</h2>
+              ) : (
+                <h2 className="heading0">{t('aboutus.heading0')}</h2>
+              )}
               <h2 className="heading">{t('aboutus.heading')}</h2>
               <Box className="text-block">
                 <p>
@@ -30,6 +36,11 @@ export default function AboutUs() {
       ) : (
         <Box className="container">
           <Box className="about-us-block" id="about-company">
+            {isMobile2 ? (
+              <h2 className="heading0">{t('aboutus.heading0').toUpperCase()}</h2>
+            ) : (
+              <h2 className="heading0">{t('aboutus.heading0')}</h2>
+            )}
             <h2 className="heading">{t('aboutus.heading')}</h2>
             <Box className="text-block">
               <p>

@@ -21,6 +21,15 @@ body {
   margin: 0;
 }
 
+.heading0 {
+  color: #CE1212;
+  font-size: 18px;
+  font-family: Inter, serif;
+  font-weight: 400;
+  margin: 0;
+  text-align: left;
+}
+
 .dark-button {
   background-color: #010015;
   color: #FFFFFF;

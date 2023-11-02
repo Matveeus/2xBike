@@ -1,14 +1,20 @@
 import React from 'react';
-import { Box } from '@mui/material';
+import { Box, useMediaQuery } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import '../../assets/styles/plans&additions.css';
 import AdditionCard from './AdditionCard';
 
 export default function Additions() {
   const { t } = useTranslation();
+  const isMobile = useMediaQuery('(max-width: 850px)');
   return (
     <Box className="container">
       <Box className="additions-block">
+        {isMobile ? (
+          <h2 className="heading0">{t('additions.heading0').toUpperCase()}</h2>
+        ) : (
+          <h2 className="heading0">{t('additions.heading0')}</h2>
+        )}
         <h1 className="heading">{t('additions.heading')}</h1>
         <Box className="additions">
           <AdditionCard
