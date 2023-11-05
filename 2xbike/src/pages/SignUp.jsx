@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import React, { useState } from 'react';
 import { Alert, Box, IconButton, InputAdornment, TextField, useMediaQuery } from '@mui/material';
 import { Visibility, VisibilityOff } from '@mui/icons-material';
