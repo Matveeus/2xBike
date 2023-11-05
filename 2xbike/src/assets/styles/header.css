@@ -9,6 +9,13 @@
     left: 0;
 }
 
+.logo {
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
 .header-inner {
     display: flex;
     justify-content: space-between;
@@ -115,6 +122,9 @@
 
 .account-button {
     cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
 }
 
 @media (max-width: 1360px) {

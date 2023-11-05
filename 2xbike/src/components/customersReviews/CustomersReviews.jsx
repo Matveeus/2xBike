@@ -17,12 +17,14 @@ export default function CustomersReviews() {
   return (
     <Box className="reviews-block" id="reviews">
       <Box className="container">
-        {isMobile ? (
-          <h2 className="heading0">{t('reviews.heading0').toUpperCase()}</h2>
-        ) : (
-          <h2 className="heading0">{t('reviews.heading0')}</h2>
-        )}
-        <h2 className="heading">{t('reviews.heading')}</h2>
+        <Box sx={{ width: '100%' }}>
+          {isMobile ? (
+            <h2 className="heading0">{t('reviews.heading0').toUpperCase()}</h2>
+          ) : (
+            <h2 className="heading0">{t('reviews.heading0')}</h2>
+          )}
+          <h2 className="heading">{t('reviews.heading')}</h2>
+        </Box>
       </Box>
       <Swiper
         slidesPerView={3}

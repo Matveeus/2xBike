@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
-import { Box, IconButton, InputAdornment, TextField } from '@mui/material';
+import { Alert, Box, IconButton, InputAdornment, TextField } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { useForm } from 'react-hook-form';
 import { Visibility, VisibilityOff } from '@mui/icons-material';
@@ -31,6 +31,7 @@ export default function SignUpForm() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [passwordConfirm, setPasswordRepeat] = useState('');
+  const [error, setError] = useState(null);
 
   const [isLoading, setIsLoading] = useState(false);
 
@@ -55,6 +56,8 @@ export default function SignUpForm() {
       setIsLoading(true);
       const { user } = await createUserWithEmailAndPassword(auth, email, password);
       await updateProfile(user, { displayName: name });
+    } catch (err) {
+      setError(t('sign-up.error'));
     } finally {
       setIsLoading(false);
     }
@@ -64,6 +67,8 @@ export default function SignUpForm() {
     try {
       setIsLoading(true);
       await signInWithEmailAndPassword(auth, email, password);
+    } catch (err) {
+      setError(t('sign-up.error'));
     } finally {
       setIsLoading(false);
     }
@@ -159,12 +164,26 @@ export default function SignUpForm() {
             </form>
           </Box>
         </Box>
-        <Box className="have-account">
-          <p>{t('sign-up.have-account')}</p>
-          <button type="button" onClick={handleFormChange}>
-            {t('sign-up.have-account-log-in')}
-          </button>
-        </Box>
+        {loginForm ? (
+          <Box className="have-account">
+            <p>{t('sign-up.have-account')}</p>
+            <button type="button" onClick={handleFormChange}>
+              {t('sign-up.have-account-log-in')}
+            </button>
+          </Box>
+        ) : (
+          <Box className="have-account">
+            <p>{t('sign-up.not-have-account')}</p>
+            <button type="button" onClick={handleFormChange}>
+              {t('sign-up.not-have-account-log-in')}
+            </button>
+          </Box>
+        )}
+        {error && (
+          <Alert severity="error" onClose={() => setError('')} sx={{ width: '250px', mt: '10px' }}>
+            {error}
+          </Alert>
+        )}
       </Box>
     </Box>
   );

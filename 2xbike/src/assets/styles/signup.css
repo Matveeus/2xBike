@@ -1,0 +1,113 @@
+.account-sign-up-inner {
+    display: flex;
+    width: 100%;
+    margin: 48px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inner-account-inner {
+    width: 40vw;
+}
+
+.sign-up-bikes-image {
+    border-radius: 16px;
+    width: 40vw;
+}
+
+.inner-account-inner h2, .inner-account-inner h3{
+    text-align: center;
+}
+
+.inner-account-inner h2 {
+    color: #CE1212;
+    font-size: 40px;
+    font-family: Inter, serif;
+    font-weight: 500;
+    margin: 0;
+}
+
+.inner-account-inner h3 {
+    color: #010020;
+    font-size: 18px;
+    font-family: Inter, serif;
+    font-weight: 500;
+}
+
+.sign-in-form-input-account .MuiInput-underline{
+    margin-bottom: 48px;
+    padding: 10px;
+}
+
+.sign-in-form-input-account .MuiInput-underline{
+    margin-bottom: 24px;
+    padding: 10px;
+}
+
+.sign-in-form-input-account input {
+    color: #010020;
+    font-size: 18px;
+    font-family: Inter, serif;
+    font-weight: 500;
+}
+
+.inner-account-inner .have-account {
+    justify-content: center;
+}
+
+.inner-account-inner .dark-button {
+    height: 60px;
+    border-radius: 48px;
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    font-family: Inter, serif;
+    font-weight: 500;
+    margin: 48px 0;
+}
+
+.forgot-password {
+    width: 100%;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: rgba(1, 0, 32, 0.50);
+    font-size: 18px;
+    font-family: Inter, serif;
+    font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+    .inner-account-inner {
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    .inner-account-inner h2 {
+        font-size: 24px;
+    }
+
+    .inner-account-inner h3 {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .sign-in-form-input-account input {
+        font-size: 16px;
+    }
+    .sign-in-form-input-account .MuiInput-underline{
+        margin-bottom: 16px;
+    }
+    .forgot-password {
+        font-size: 14px;
+    }
+    .inner-account-inner .dark-button  {
+        height: 48px;
+        font-size: 16px;
+        margin: 24px 0;
+    }
+    .account-sign-up-inner {
+        margin: 36px 0;
+    }
+}

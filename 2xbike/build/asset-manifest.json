@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.27024cab.css",
-    "main.js": "/static/js/main.43525a7f.js",
+    "main.css": "/static/css/main.11ff4960.css",
+    "main.js": "/static/js/main.c75ad65c.js",
     "static/js/787.abe8d809.chunk.js": "/static/js/787.abe8d809.chunk.js",
     "static/media/front.png": "/static/media/front.855ee6a6bed955c5b6dc.png",
     "static/media/back.png": "/static/media/back.ec390260f1261dc2f50d.png",
@@ -11,6 +11,7 @@
     "static/media/ivan.jpeg": "/static/media/ivan.f750c351ea2e35d40b58.jpeg",
     "static/media/amnWithBike.png": "/static/media/amnWithBike.cb7d31ac50f5f7bb0071.png",
     "static/media/our-photo.png": "/static/media/our-photo.d5e703070d182c4c01f8.png",
+    "static/media/sign-up-bikes.png": "/static/media/sign-up-bikes.87b8cbe469d8055d4c65.png",
     "static/media/main-bike.png": "/static/media/main-bike.204e89b7d888410f5a3e.png",
     "static/media/x2bike-logo.svg": "/static/media/x2bike-logo.fdf9e0ff0940ff4d916234d46d714443.svg",
     "static/media/speed.svg": "/static/media/speed.7e6b615b1df636ddffdad98db9019a2f.svg",
@@ -29,12 +30,12 @@
     "static/media/close-cross.svg": "/static/media/close-cross.a5c665660b7ea2db28ebe51af24a3694.svg",
     "static/media/arrow-down.svg": "/static/media/arrow-down.22a0cd112d7aaaf9a1f2969531f42c23.svg",
     "static/media/burger-menu.svg": "/static/media/burger-menu.7578e191a0f70fd493b75bc9c7d87eea.svg",
-    "main.27024cab.css.map": "/static/css/main.27024cab.css.map",
-    "main.43525a7f.js.map": "/static/js/main.43525a7f.js.map",
+    "main.11ff4960.css.map": "/static/css/main.11ff4960.css.map",
+    "main.c75ad65c.js.map": "/static/js/main.c75ad65c.js.map",
     "787.abe8d809.chunk.js.map": "/static/js/787.abe8d809.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.27024cab.css",
-    "static/js/main.43525a7f.js"
+    "static/css/main.11ff4960.css",
+    "static/js/main.c75ad65c.js"
   ]
 }
