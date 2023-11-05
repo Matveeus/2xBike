@@ -7,7 +7,10 @@
           "rent" : "Rent",
           "reviews" : "Reviews",
           "about_company" : "About Company",
-          "contacts" : "Contacts"
+          "contacts" : "Contacts",
+          "plans": "Plans",
+          "FAQ": "FAQ",
+          "profile": "Profile"
         }
 },
   "intro": {
@@ -102,6 +105,7 @@
     "review6": "The bike is very smooth and is faster than I expected! Helped me sign up for my subscription and was very friendly! I will definitely be doing a lot of deliveries on this bike!"
   },
   "contacts": {
+    "heading0": "Find us",
     "heading": "CONTACTS",
     "address-label" : "Address",
     "phone-label": "Phone",
@@ -124,7 +128,7 @@
     "not-have-account-log-in" : "Sign up",
     "reset-account" : "Forgot password",
     "reset-account-log-in" : "No worries, weʼll send you reset instructions.",
-    "reseted-account-log-in" : "We sent code to ",
+    "reseted-account-log-in" : "We sent reset email to ",
     "reseted-account" : "No worries, weʼll send you reset instructions.",
     "submit-form": "Submit",
     "name-req" : "Name is required",
@@ -141,6 +145,7 @@
     "error": "Invalid email or password"
   },
   "FAQ": {
+    "heading0" : "Discover more",
     "more-questions" : "More questions",
     "hide" : "Hide",
     "question1" : "How x2bike subscription works?",
@@ -181,5 +186,8 @@
     "answer17": "You have the flexibility to return the e-bike at any time before the end of your Rent-to-Own plan. However, please keep in mind that the transfer of e-bike ownership will not take place until all payments are made.",
     "answer18": "In case of mechanical issues with the e-bike, immediately stop using it and contact us to agree on the date and time of its repair.",
     "answer19": "Our team of expert bike mechanics will conduct a thorough examination of the bike to determine its condition. You can find more information about this process in the E-bike agreement subscription."
+  },
+  "profile" : {
+    "logout": "Log out"
   }
 }

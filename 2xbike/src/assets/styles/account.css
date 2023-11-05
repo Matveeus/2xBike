@@ -1,0 +1,50 @@
+.account-nav .nav-item {
+    text-decoration: none;
+}
+
+.account-nav .nav-item:hover {
+    color: #CE1212;
+    border-bottom: 1px solid #CE1212;
+}
+
+.active-url {
+    color: #CE1212;
+    border-bottom: 1px solid #CE1212;
+}
+
+.account-wrapper .plans-block{
+    margin-top: 80px;
+}
+
+.contacts-wrapper .contacts-block{
+    background: none;
+    padding: 0;
+}
+
+.contacts-wrapper .heading {
+    color: #010020;
+    text-align: center;
+}
+
+.contacts-wrapper .all-contacts {
+    color: #010020;
+}
+
+.account-faq .heading {
+    text-align: center;
+}
+
+.log-out {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    color: #010020;
+    font-size: 18px;
+    font-family: Inter, serif;
+    font-weight: 500;
+}
+
+.log-out svg {
+    margin-right: 16px;
+}
