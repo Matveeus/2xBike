@@ -24,12 +24,6 @@ export default function RentPlans() {
           price={t('plans.plans.plan1Price')}
         />
         <RentCard
-          title={t('plans.plans.plan2Title')}
-          description={t('plans.plans.plan2Desc')}
-          number="250"
-          price={t('plans.plans.plan2Price')}
-        />
-        <RentCard
           title={t('plans.plans.plan3Title')}
           description={t('plans.plans.plan3Desc')}
           number="70"

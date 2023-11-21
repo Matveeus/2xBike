@@ -128,6 +128,7 @@
     font-family: Inter, serif;
     font-weight: 500;
     line-height: 33px;
+    text-wrap: nowrap;
 }
 
 .addition-card .rent-card-desc, .addition-card .rent-card-price {
